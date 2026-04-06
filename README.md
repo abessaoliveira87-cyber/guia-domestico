@@ -164,7 +164,7 @@ Contribuições são bem-vindas! Por favor:
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-## 👥 Autores
+## 👥 Autores OLIVEIRA, Alexandre Bessa de; SOUZA, Elenir Freitas de; MENEZES, Gabrielly Alves de; SOARES, Geraldo Henrique Oliveira; OLIVEIRA, Felipe Silva Rocha de; OLIVEIRA, Leandro de; SANTANA, Thierre Becker de. 
 
 - **Desenvolvido com foco em inclusão social**
 - Baseado na Lei 150/2015 (Lei do Empregado Doméstico)
@@ -184,4 +184,4 @@ Para dúvidas, sugestões ou relatar problemas:
 
 ---
 
-**Desenvolvido com ❤️ para empoderar trabalhadores domésticos**
+**Desenvolvido com ❤️ para orientar trabalhadores domésticos**
