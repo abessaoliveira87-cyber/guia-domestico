@@ -164,7 +164,7 @@ Contribuições são bem-vindas! Por favor:
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-## 👥 Autores OLIVEIRA, Alexandre Bessa de; SOUZA, Elenir Freitas de; MENEZES, Gabrielly Alves de; SOARES, Geraldo Henrique Oliveira; OLIVEIRA, Felipe Silva Rocha de; OLIVEIRA, Leandro de; SANTANA, Thierre Becker de. 
+## 👥 Autores Grupo PI - PJI110 - A2026S1N2 - Grupo 18
 
 - **Desenvolvido com foco em inclusão social**
 - Baseado na Lei 150/2015 (Lei do Empregado Doméstico)
