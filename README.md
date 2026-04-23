@@ -57,11 +57,6 @@ Cada cargo possui:
 - Faixa salarial média
 
 
-## 📖 Documentação
-
-- [Especificação de Requisitos](docs/requisitos.md)
-- [Guia de Desenvolvimento](docs/desenvolvimento.md)
-- [Guia de Contribuição](CONTRIBUTING.md)
 
 ## 🤝 Contribuindo
 
