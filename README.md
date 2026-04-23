@@ -32,55 +32,7 @@ O Guia Doméstico é uma plataforma web desenvolvida com foco em **acessibilidad
 10. **INSS e FGTS** - Contribuições, benefícios e direitos
 11. **Pagamentos e Descontos** - Folha de pagamento, horas extras, descontos legais
 
-## 🎨 Wireframes
 
-Todos os wireframes foram desenvolvidos com foco em:
-
-- **Acessibilidade**: Contraste alto, tipografia clara, elementos grandes
-- **Usabilidade**: Navegação simples, linguagem clara, sem jargão técnico
-- **Responsividade**: Funciona em desktop, tablet e mobile
-- **Inclusão**: Projetado para pessoas com pouca escolaridade
-
-### Visualizar Wireframes
-
-Os wireframes de todas as 11 páginas estão disponíveis na pasta `/wireframes`:
-
-- `wireframe_01_cadastro_correto.png` - Página de Cadastro
-- `wireframe_02_gerenciar_correto.png` - Gerenciar Conta
-- `wireframe_03_home_correto.png` - Home
-- `wireframe_04_diagnostico_correto.png` - Gerar Diagnóstico
-- `wireframe_05_lei_correto.png` - Lei 150/2015
-- `wireframe_06_afastamento_correto.png` - Afastamento e Licenças
-- `wireframe_07_cargo_correto.png` - Cargo e Detalhamento
-- `wireframe_08_demissao_correto.png` - Demissão
-- `wireframe_09_ferias_correto.png` - Férias e 13º
-- `wireframe_10_inss_fgts_correto.png` - INSS e FGTS
-- `wireframe_11_pagamentos_correto.png` - Pagamentos e Descontos
-
-## 🎯 Princípios de Design
-
-### Acessibilidade
-
-- **Tipografia Clara**: Fonte Segoe UI, tamanho mínimo 14px
-- **Contraste Alto**: Cores bem definidas (azul #4682B4, branco, cinza)
-- **Navegação Intuitiva**: Botões grandes (mínimo 44x44px), caminho claro
-- **Feedback Visual**: Mudanças de cor, sombras, animações suaves
-
-### Usabilidade para Pouca Escolaridade
-
-- **Linguagem Simples**: Sem jargão técnico, frases curtas
-- **Exemplos Práticos**: Números reais, cálculos demonstrados
-- **Ícones Visuais**: Facilita identificação rápida de seções
-- **Avisos Destacados**: Informações críticas em caixas coloridas
-- **Confirmações**: Ações críticas requerem confirmação do usuário
-
-## 🛠️ Tecnologias (Planejadas)
-
-- **Frontend**: HTML5, CSS3, JavaScript (Vanilla ou Framework)
-- **Backend**: Node.js/Express ou Python/FastAPI
-- **Banco de Dados**: PostgreSQL ou MySQL
-- **Autenticação**: JWT ou OAuth
-- **Relatórios**: Geração de PDF com dados personalizados
 
 ## 📊 Dados do Projeto
 
@@ -104,45 +56,6 @@ Cada cargo possui:
 - Obrigações legais
 - Faixa salarial média
 
-## 📱 Responsividade
-
-- ✅ Desktop (1200px+)
-- ✅ Tablet (768px - 1199px)
-- ✅ Mobile (até 767px)
-
-## 🚀 Como Começar
-
-### Pré-requisitos
-
-- Node.js 14+ ou Python 3.8+
-- Git
-- Navegador moderno
-
-### Instalação
-
-```bash
-# Clonar o repositório
-git clone https://github.com/abessaoliveira87-cyber/guia-domestico.git
-
-# Entrar no diretório
-cd guia-domestico
-
-# Instalar dependências (quando aplicável)
-npm install
-# ou
-pip install -r requirements.txt
-```
-
-### Executar Localmente
-
-```bash
-# Iniciar servidor de desenvolvimento
-npm start
-# ou
-python app.py
-```
-
-Acesse `http://localhost:3000` (ou porta configurada) no seu navegador.
 
 ## 📖 Documentação
 
