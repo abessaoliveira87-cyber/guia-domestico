@@ -2,7 +2,7 @@
 
 **Plataforma educativa para empregados domésticos conhecerem seus direitos e deveres**
 
-Uma solução digital inclusiva que capacita empregados domésticos a compreender a legislação trabalhista, seus direitos, deveres e benefícios de forma simples e acessível.
+Uma solução digital inclusiva que orienta empregados domésticos a compreender a legislação trabalhista, seus direitos, deveres e benefícios de forma simples e acessível.
 
 ## 📋 Sobre o Projeto
 
@@ -36,7 +36,7 @@ O Guia Doméstico é uma plataforma web desenvolvida com foco em **acessibilidad
 
 ## 📊 Dados do Projeto
 
-### 48 Cargos Domésticos Cobertos
+### Existem no emprego doméstico 48 Cargos Domésticos Cobertos
 
 O projeto contempla 48 diferentes cargos domésticos, incluindo:
 
@@ -54,7 +54,7 @@ Cada cargo possui:
 - Funções principais
 - Responsabilidades
 - Obrigações legais
-- Faixa salarial média
+
 
 
 
@@ -74,7 +74,7 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 ## 👥 Autores Grupo PI - PJI110 - A2026S1N2 - Grupo 18
 
-- **Desenvolvido com foco em inclusão social**
+- **Desenvolvido com foco em inclusão social para o Projeto Integrador Univesp**
 - Baseado na Lei 150/2015 (Lei do Empregado Doméstico)
 
 ## 📞 Contato e Suporte
