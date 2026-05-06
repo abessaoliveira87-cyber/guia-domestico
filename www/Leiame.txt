@@ -247,7 +247,3 @@ O VS Code é ideal para desenvolvedores web, de sistemas e de aplicativos modern
 ==================================================
 OBSERVAÇÕES IMPORTANTES:
 Todo conteúdo deste texto carece de bibliografia (de acordo com a norma ABNT) para corroborar a informação.
-
-
-
-
