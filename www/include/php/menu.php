@@ -35,13 +35,16 @@ $diretorio = "/publico";
 if (isset($_SESSION["CHAVE_USUARIO"])) {
 	if ($_SESSION["TIPO_USUARIO"] == "ADMINISTRADOR") {
 		$diretorio = "/sistema";
+    $home = "/sistema/index.php";
 	}
+  if ($_SESSION["TIPO_USUARIO"] == "USUARIO") {
+    $home = "/publico/usuario/index.php";
+  }
+
 }
 if (isset($_SESSION["CHAVE_USUARIO"])) {
 	if ($_SESSION["CHAVE_USUARIO"] != "") {		    
-		if ($_SESSION["TIPO_USUARIO"] == "ADMINISTRADOR") {
-      $home = "/sistema/index.php";
-      $home = "/publico/usuario/index.php";
+		if ($_SESSION["TIPO_USUARIO"] == "ADMINISTRADOR") {      
 			$html_btn_entrar .= '          <li class="nav-item dropdown" data-bs-theme="light">' . "\n";
 			$html_btn_entrar .= '            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">' . "\n";
 			$html_btn_entrar .= '              ' . $_SESSION["NOME_USUARIO"] . "\n";
@@ -66,6 +69,12 @@ if (isset($_SESSION["CHAVE_USUARIO"])) {
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Aplicativos </a>
     			  <ul class="dropdown-menu" data-bs-theme="light">
+              <li>
+                <a class="dropdown-item" href="/publico/usuario/index.php">Home Usuário Normal</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/sistema/index.php">Home Usuário Administrador</a>
+              </li>
               <li>
                 <a class="dropdown-item" href="/sistema/usuario/usuario.php">Usuários</a>
               </li>
@@ -97,7 +106,7 @@ if (isset($_SESSION["CHAVE_USUARIO"])) {
 			$html_auxiliares .= '     </li>' . "\n";
 	  }
 	  if ($_SESSION["TIPO_USUARIO"] == "USUARIO") {
-      $home = "/usuario/usuario_config.php";      
+      $home = "/publico/usuario/index.php";      
       $html_btn_entrar .= '          <li class="nav-item">' . "\n";
       $html_btn_entrar .= '            <a class="nav-link" href="/publico/usuario/index.php">Diagnóstico</a>' . "\n";
       $html_btn_entrar .= '          </li>' . "\n";
@@ -135,7 +144,7 @@ if (isset($_SESSION["TIPO_USUARIO"])) {
 ?>
 <nav class="navbar navbar-expand-lg fixed-top justify-content-end navbar-personalizado" data-bs-theme="light" style="background-color:#FFF;">
   <div class="container">
-    <a class="navbar-brand" href="/"><img src="/design/guiadomestico.jpg" class="img-fluid" style="max-width:200px" /></a>
+    <a class="navbar-brand" href="<?php echo $home ?>"><img src="/design/guiadomestico.jpg" class="img-fluid" style="max-width:200px" /></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>

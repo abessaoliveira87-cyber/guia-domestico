@@ -71,7 +71,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $dti_usuario = "";
     $hrdia_usuario = "";
     $diasemana_usuario = "";
-
     abre_db();
     $strsql = "
 		select     

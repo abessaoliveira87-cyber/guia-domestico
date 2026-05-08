@@ -93,8 +93,23 @@ if ($acao == "GRAVAR") {
 		$qusuario->execute();
 		$chave_usuario = $pdo->lastInsertId();
 		fecha_diario("tusuario", "chave_usuario", $chave_usuario, $abre_diario = array(), $campoexcluidos = array("dta_usuario"));
-		// EOF Inclusao do registro	   
-  	fecha_db();   	
+		// EOF Inclusao do registro
+    $_SESSION["CHAVE_USUARIO"] = $chave_usuario;
+    $_SESSION["NOME_USUARIO"] = $nome_usuario;
+    $_SESSION["LOGIN_USUARIO"] = $email_usuario;
+    $_SESSION["TIPO_USUARIO"] = $tipo_usuario;    
+    $_SESSION["CHAVE_USUARIOLOGIN"] = $chave_usuario;
+    $_SESSION["NOME_USUARIOLOGIN"] = $nome_usuario;
+    $_SESSION["LOGIN_USUARIOLOGIN"] = $email_usuario;
+    $_SESSION["SESSAO_INICIO"] = time(); // INICIO DA ATIVIDADE DA SESSAO
+    $_SESSION["SESSAO_EXPIRA"] = 28800; // SEGUNDOS SEM ATIVIDADE (8 HORAS)
+    if ($tipo_usuario == "ADMINISTRADOR") {
+      $home = "/sistema/index.php";
+    }
+    else {
+      $home = "/publico/usuario/index.php";
+    }
+    fecha_db();   	
 	  header("Location: " . $home);
 	  die();
 	}
