@@ -154,7 +154,7 @@ if ($pos > 0) {
 $chave_cargo = "0";
 $descr_cargo = "";
 $cbo_cargo = "";
-$salario_usuario = "0";
+$salario_usuario = "";
 $dti_usuario = "";
 $hrdia_usuario = "";
 $hrdiasab_usuario = "";
@@ -169,9 +169,14 @@ if (isset($_SESSION["DESCR_CARGO"])) {
 if (isset($_SESSION["CBO_CARGO"])) {
   $cbo_cargo = $_SESSION["CBO_CARGO"];
 }
-if (isset($_SESSION["SALARIO_USUARIO"])) {
+if (isset($_SESSION["SALARIO_USUARIO"])) {  
   $salario_usuario = $_SESSION["SALARIO_USUARIO"];
-  $salario_usuario = FormataNumero($salario_usuario, 2);
+  if (intval($salario_usuario) > 0) {
+    $salario_usuario = FormataNumero($salario_usuario, 2);
+  }
+  else {
+    $salario_usuario = "";
+  }
 }
 if (isset($_SESSION["DTI_USUARIO"])) {
   $dti_usuario = $_SESSION["DTI_USUARIO"];
@@ -192,7 +197,7 @@ if (isset($_SESSION["DIASEMANA_USUARIO"])) {
 //********************
 //********************
 abre_db();
-$html_cargo = "<option value='0' selected>Selecione o cargo</option>";
+$html_cargo = "<option value='' selected>Selecione o cargo</option>";
 $strsql = "
 select 
 tcargo.chave_cargo
@@ -243,7 +248,7 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
                   <form class="needs-validation" method="post" id="FUSUARIO_DIAGNOSTICO" name="FUSUARIO_DIAGNOSTICO" action="diagnostico_config.php" novalidate>
                     <label for="CHAVE_CARGO" class="form-label">Cargo</label>
                     <div class="form-group mb-2 has-validation">
-                      <select class="form-select" id="CHAVE_CARGO" name="CHAVE_CARGO" aria-label="Informe seu cargo">                        
+                      <select class="form-select" id="CHAVE_CARGO" name="CHAVE_CARGO" aria-label="Informe seu cargo" required>
                         <?php echo $html_cargo; ?>
                       </select>                     
                       <div class="invalid-feedback">
@@ -255,7 +260,7 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
                       <div class="col-6">
                         <label for="SALARIO_USUARIO" class="form-label">Salário</label>
                         <div class="form-group mb-2 has-validation">
-                          <input type="text" class="form-control" id="SALARIO_USUARIO" name="SALARIO_USUARIO" value="<?php echo $salario_usuario ?>" placeholder="0,00" required>
+                          <input type="text" class="form-control" id="SALARIO_USUARIO" name="SALARIO_USUARIO" value="<?php echo $salario_usuario ?>" placeholder="Informe o valor do salário" required>
                           <div class="invalid-feedback">
                             Por favor, informe seu salário.
                           </div>
@@ -327,5 +332,23 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
   </div>
 </div>
 <?php include($Raiz . "include/php/rodape.php"); ?>
+<script type="text/javascript">
+// Desabilita submit se houver erro nos campos
+(() => {
+  'use strict'
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
 </body>
 </html>

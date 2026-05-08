@@ -49,33 +49,49 @@ if (!isset($_SESSION['AMBIENTE'])) {
 //**** EOF Prepara ambiente para execuçao...incluir na pagina de login tambem.
 //********************
 //********************
-//********************
-//********************
-//**** Grava registro caso POST chamado contenha diretiva GRAVAR
-//********************
-//********************
-$Acao = "";
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
-	$Acao = "DIAGNOSTICAR";
-}
-if ($Acao == "DIAGNOSTICAR") {
-	//$chave_usuario = $_POST["chave_usuario"];
-	//$nome_usuario = $_POST["nome_usuario"];
-	//$email_usuario = $_POST["email_usuario"];
-	//$senha_usuario = $_POST["senha_usuario"];
-  //$sit_usuario = $_POST["sit_usuario"];
-	//$tipo_usuario = 'ADMINISTRADOR';
-
-	header("Location: /publico/diagnostico/diagnostico_menu.php");
-	die();
-}
 
 $nome_usuario = $_SESSION["NOME_USUARIO"];
 $pos = strpos($nome_usuario, " ");
 if ($pos > 0) {
   $nome_usuario = substr($nome_usuario, 0, $pos);
 }
+$chave_cargo = strval($_SESSION["CHAVE_CARGO"]);
+$descr_cargo = strval($_SESSION["DESCR_CARGO"]);
+$cbo_cargo = strval($_SESSION["CBO_CARGO"]);
 
+if ($chave_cargo != "") {
+  //********************
+  //********************
+  //**** Pega cargos
+  //********************
+  //********************
+  abre_db();
+  $strsql = "
+  select 
+  tcargo.chave_cargo
+  ,tcargo.descr_cargo
+  ,tcargo.descrdetalhada_cargo
+  ,tcargo.cbo_cargo
+  from 
+  tcargo
+  where 
+  tcargo.chave_cargo = :vchave_cargo and 
+  tcargo.caixa_cargo = 1
+  order by tcargo.chave_cargo
+  ";
+  $qcargo = $pdo->prepare($strsql);
+  $qcargo->bindParam(":vchave_cargo", $chave_cargo);
+  $qcargo->execute();
+  if ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {    
+    $cbo_cargo = $tcargo["cbo_cargo"];  
+    $descrdetalhada_cargo = $tcargo["descrdetalhada_cargo"];  
+  }
+  //********************
+  //********************
+  //**** EOF Pega cargos
+  //********************
+  //********************
+}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -106,7 +122,7 @@ if ($pos > 0) {
     </div>
     <div class="row mt-2 mb-2 ps-3 pe-3">
       <div class="col-12">
-        <span class="h2 texto-negrito">Empregada Doméstica </span><span class="h2 texto-negrito texto-regular">(CBO 5121-05)</span>
+        <span class="h2 texto-negrito"><?php echo $descr_cargo ?>&nbsp;</span><span class="h2 texto-negrito texto-regular"><?php echo "(" . $cbo_cargo . ")"; ?></span>
       </div>     
     </div>
     <div class="row mt-2 mb-2 ps-3 pe-3">
@@ -114,8 +130,13 @@ if ($pos > 0) {
         <h4><i class="fa-regular fa-circle-check texto-regular"></i>&nbsp;Atividades Principais</h4>
       </div>     
     </div>
-
     <div class="row mt-4 mb-3 ps-3 pe-3">
+      <div class="col-md-12">
+        <div class="rounded shadow-right border ps-3 pe-3 pt-3 pb-3" style="background-color:#FFF;">
+          <span class="texto-secundario texto-maior"><?php echo $descrdetalhada_cargo; ?></span>
+        </div>
+      </div>
+<!--      
       <div class="col-md-4">
         <div class="rounded border ps-3 pe-3 pt-3 pb-3" style="background-color:#FFF;">
           <h4>Limpeza e Organização</h4>
@@ -132,10 +153,10 @@ if ($pos > 0) {
         <div class="rounded border ps-3 pe-3 pt-3 pb-3" style="background-color:#FFF;">
           <h4>Lavanderia</h4>
           <span class="texto-secundario texto-menor">Lavar, passar e organizar roupas pessoais, de cama, mesa e banho, cuidando da conservação de diferentes tipos de tecidos.</span>
-        </div>            
+        </div>
       </div>
+-->      
     </div>
-    
     <div class="row mt-4 mb-3 ps-3 pe-3">
       <div class="col-md-12">
         <div class="rounded ps-3 pe-3 pt-3 pb-3" style="background-color:#f4f1f3; min-height: 100px;">
