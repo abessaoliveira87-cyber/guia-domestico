@@ -31,7 +31,7 @@ include($Raiz . "include/php/header.php"); // Configurações HEADER
 include($Raiz . "include/php/funcoes.php"); // Funcoes de Usuário PHP
 include($Raiz . "conexao/db.php");
 VerificaSessao();
-$home = $Raiz . "/index.php";
+$home = "/publico/usuario/index.php";
 $ok = true;
 $pagina_titulo = "Configuração da conta do usuário";
 $acao = "EDITAR";
@@ -275,7 +275,7 @@ if ($acao == "EDITAR") {
               <div class="card-footer" style="min-height:100px; padding-top:40px;">
                 <div class="row">
                   <div class="col-md-6">
-                    <button type="button" id="BTN_VOLTAR" name="BTN_VOLTAR" class="btn btn-light" onclick="javascript=location=\'/index.php\'"><i class="fa-solid fa-arrow-left"></i> Voltar ao início</button>                  
+                    <button type="button" id="BTN_VOLTAR" name="BTN_VOLTAR" class="btn btn-light" onclick="javascript=location=\'/publico/usuario/index.php\'"><i class="fa-solid fa-arrow-left"></i> Voltar ao início</button>                  
                   </div>
                   <div class="col-md-6 text-end">                  
                     <button type="submit" id="BTN_SUBMETER" name="BTN_SUBMETER" class="btn btn-custom">Salvar alterações</button>                
