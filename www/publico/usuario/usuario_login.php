@@ -239,8 +239,6 @@ else {
       }
     }
     if (vok == true) {
-      setcookie("GuiaDomesticoUsr", document.FLOGIN_POST.EMAIL_USUARIO.value.trim(), 30);
-      setcookie("GuiaDomesticoPsw", document.FLOGIN_POST.SENHA_USUARIO.value.trim(), 30);
       document.FLOGIN_POST.submit();
     }
   }
@@ -254,53 +252,9 @@ else {
   function acesso_tentarnovamente() {
     window.location.href = '/publico/usuario/usuario_login.php';
   }
-
-  function getcookie() {
-    var cNomeCookie = "GuiaDomesticoUsr" + "=";
-    var cDecodedCookie = decodeURIComponent(document.cookie);
-    var aCookies = cDecodedCookie.split(';');
-    var cCookie = "";
-    var i = 0;
-    var vUsr = "";
-    var vPsw = "";
-    for (i = 0; i < aCookies.length; i++) {
-      cCookie = aCookies[i];
-      while (cCookie.charAt(0) == ' ') {
-        cCookie = cCookie.substring(1);
-      }
-      if (cCookie.indexOf(cNomeCookie) == 0) {
-        vUsr = cCookie.substring(cNomeCookie.length, cCookie.length);
-        break;
-      }
-    }
-    cNomeCookie = "GuiaDomesticoPsw" + "=";
-    cDecodedCookie = decodeURIComponent(document.cookie);
-    aCookies = cDecodedCookie.split(';');
-    cCookie = "";
-    for (i = 0; i < aCookies.length; i++) {
-      cCookie = aCookies[i];
-      while (cCookie.charAt(0) == ' ') {
-        cCookie = cCookie.substring(1);
-      }
-      if (cCookie.indexOf(cNomeCookie) == 0) {
-        vPsw = cCookie.substring(cNomeCookie.length, cCookie.length);
-        break;
-      }
-    }
-    document.FLOGIN_POST.LOGIN_USUARIO.value = vUsr;
-    document.FLOGIN_POST.SENHA_USUARIO.value = vPsw;
-    return "";
-  }
-
-  function setcookie(cname, cvalue, exdays) {
-    const d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    var expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/publico/usuario/";
-  }
 </script>
 
-<body onload='javascript:getcookie()'>
+<body>
   <script src='https://www.google.com/recaptcha/api.js' async defer></script>
   <?php include($Raiz . "include/php/menu.php"); ?>
   <div class="container">    
