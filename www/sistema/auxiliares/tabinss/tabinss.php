@@ -353,12 +353,12 @@ while ($ttabinss = $qtabinss->fetch(PDO::FETCH_ASSOC)) {
   $vlfixo_tabinss = FormataNumero($ttabinss["vlfixo_tabinss"],2);
   $ano_tabinss = $ttabinss["ano_tabinss"];
   $etq .= '              <tr>' . "\n";
-  $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA">' . str_pad($chave_tabinss, 6, "0", STR_PAD_LEFT) . '</td>' . "\n";
+  $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA d-none d-sm-block">' . str_pad($chave_tabinss, 6, "0", STR_PAD_LEFT) . '</td>' . "\n";
   $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA">' . $vli_tabinss . '</td>' . "\n";  
   $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA">' . $vlf_tabinss . '</td>' . "\n";
   $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA">' . $aliq_tabinss . '</td>' . "\n";  
-  $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA">' . $vlded_tabinss . '</td>' . "\n";
-  $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA">' . $vlfixo_tabinss . '</td>' . "\n";
+  $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA d-none d-sm-block">' . $vlded_tabinss . '</td>' . "\n";
+  $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA d-none d-sm-block">' . $vlfixo_tabinss . '</td>' . "\n";
   $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA">' . $ano_tabinss . '</td>' . "\n";
   $etq .= '                <td class="text-center"><a class="link-padrao" href="#" data-bs-toggle="modal" data-bs-target="#MODAL_DIARIO_EXC" id="SHOW_DIARIO_EXC" data-id="' . $chave_tabinss . '" data-campo-id="chave_tabinss" data-tabela-id="ttabinss" data-url-id="' . $Raiz . '" data-caixa-id="caixa_tabinss"><i class="fa-regular fa-trash-can" title="Excluir"></a></td>' . "\n";
   $etq .= '                <td class="text-center"><a class="link-padrao" href="#" data-bs-toggle="modal" data-bs-target="#MODAL_DIARIO"     id="SHOW_DIARIO"     data-id="' . $chave_tabinss . '" data-campo-id="chave_tabinss" data-tabela-id="ttabinss" data-url-id="' . $Raiz . '"><i class="fas fa-database" title="Diário do registro"></i></a></td>' . "\n";
@@ -400,7 +400,7 @@ $html_pesq .= '            </span>' . "\n";
 $html_pesq .= '            <button type="button" class="btn btn-sm btn-custom" id="BTN_PROCURAR" name="BTN_PROCURAR" onclick="javascript:procurar_tabinss();">Ok</button>' . "\n";
 $html_pesq .= '          </div>' . "\n";
 $html_pesq .= '        </div>' . "\n";
-$html_pesq .= '        <div class="col-6">' . "\n";
+$html_pesq .= '        <div class="col-sm-6">' . "\n";
 $html_pesq .= $btn_redefinir;
 $html_pesq .= '          <button type="button" class="btn btn-sm btn-secondary" id="BTN_LIXEIRA" name="BTN_LIXEIRA" onclick="javascript:caixa_tabinss(\'' . $caixa_tabinss . '\')">' . (($caixa_tabinss == 1) ? 'Lixeira' : 'Cadastrados') . '</button>' . "\n";
 $html_pesq .= '        </div>' . "\n";
@@ -420,12 +420,12 @@ if ($etq != "") {
   $html .= '          <table class="table table-hover table-sm mb-0">' . "\n";
   $html .= '            <thead class="thead-light">' . "\n";
   $html .= '              <tr>' . "\n";
-  $html .= '                <th><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=CHAVE_TABINSS">Chave</a></th>' . "\n";
+  $html .= '                <th class="d-none d-sm-block"><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=CHAVE_TABINSS">Chave</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=VLI_TABINSS">De</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=VLF_TABINSS">Até</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=ALIQ_TABINSS">Alíquota</a></th>' . "\n";
-  $html .= '                <th><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=VLDED_TABINSS">Dedução</a></th>' . "\n";
-  $html .= '                <th><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=VLFIXO_TABINSS">Valor Fixo</a></th>' . "\n";
+  $html .= '                <th class="d-none d-sm-block"><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=VLDED_TABINSS">Dedução</a></th>' . "\n";
+  $html .= '                <th class="d-none d-sm-block"><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=VLFIXO_TABINSS">Valor Fixo</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=ANO_TABINSS">Ano</a></th>' . "\n";  
   $html .= '                <th><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=CAIXA_TABINSS"> </a></th>' . "\n";
   $html .= '                <th></th>' . "\n";
@@ -440,7 +440,7 @@ $html .= '        </form>' . "\n";
 // Botões de paginação inferior
 $html .= '        <div class="card-footer text-muted">' . "\n";
 if ($qtdpagina > 0 && ($qtdreg > $qtdlimite)) {
-  $html .= '          <div class="col mb-2">' . "\n";
+  $html .= '          <div class="col-sm-12 mb-2">' . "\n";
   $html .= '            <nav aria-label="Páginas de navegação">' . "\n";
   $html .= '              <ul class="pagination pagination-sm mb-0">' . "\n";
   $html .= '                <li class="page-item"><a class="page-link" href="tabinss.php?PG=FIRST' . (($_SESSION['SEARCHSTRING_TABINSS'] != "") ? '&PROCURAR=' . $_SESSION['SEARCHSTRING_TABINSS'] : "") . '">&laquo;</a></li>' . "\n";
@@ -464,7 +464,7 @@ if ($qtdpagina > 0 && ($qtdreg > $qtdlimite)) {
 }
 // Resumo da página
 if ($qtdregtotal > 0 and ($qtdregtotal != $qtdreg)) {
-  $html .= '          <div class="col mb-2">' . "\n";
+  $html .= '          <div class="col-sm-12 mb-2">' . "\n";
   if ($qtdregtotal - $qtdreg == 1) {
     $html .= '            <a href="javascript:redefinir_tabinss();"><span>Há ' . ($qtdregtotal - $qtdreg) . ' registro que não satisfaz a pesquisa.</span></a><br />' . "\n";
   }
@@ -474,7 +474,7 @@ if ($qtdregtotal > 0 and ($qtdregtotal != $qtdreg)) {
   $html .= '          </div>' . "\n";
 }
 // EOF Resumo da página
-$html .= '          <div class="col text-center">' . "\n";
+$html .= '          <div class="col-sm-12 text-center">' . "\n";
 $html .= '            <button type="button" class="btn btn-sm btn-custom" id="BTN_TABINSS_INCLUIR" name="BTN_TABINSS_INCLUIR">Incluir</button>' . "\n";
 $html .= '          </div>' . "\n";
 $html .= '        </div>' . "\n";
@@ -534,7 +534,7 @@ $html .= '      </div>' . "\n";
   <?php include($Raiz . "include/php/menu.php"); ?>
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col-sm-12">
         <?php
         Modal_Diario($Raiz);
         Modal_Exclusao($Raiz, $link_main);
@@ -544,12 +544,12 @@ $html .= '      </div>' . "\n";
   </div>
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col-sm-12">
         <?php echo $html; ?>
       </div>
     </div>
     <div class="row mt-4 Texto-Rodape">
-      <div class="col">
+      <div class="col-sm-12">
         <h5>Legendas</h5>
         <span><i class="fas fa-minus-circle" style="min-width:40px;" align="center"></i>Excluir registro</span><br />
         <span><i class="fas fa-database" style="min-width:40px;" align="center"></i>Diário do registro</span>

@@ -219,12 +219,12 @@ if ($Acao == "EDITAR") {
 	}	
 	$html_submenu = "";
   $html_submenu .= '<div class="row mb-1">' . "\n";
-  $html_submenu .= '  <div class="col-12">' . "\n";
+  $html_submenu .= '  <div class="col-sm-12">' . "\n";
   $html_submenu .= '    <h5>Cadastro de Cargos</h5>' . "\n";
 	$html_submenu .= '  </div>' . "\n";
 	$html_submenu .= '</div>' . "\n";
 	$html_submenu .= '<div class="row mb-1">' . "\n";
-	$html_submenu .= '  <div class="col-12">' . "\n";
+	$html_submenu .= '  <div class="col-sm-12">' . "\n";
 	$html_submenu .= '    <a href="' . $Home . '" class="btn btn-sm btn-custom2"><i class="fa-solid fa-arrow-left"></i> Voltar</a>' . "\n";
 	if ($chave_cargo > 0) {	
     $html_submenu .= '    <a class="btn btn-sm btn-custom2" href="#" id="SHOW_DIARIO_EXC" data-id="' . $chave_cargo . '" data-campo-id="chave_cargo" data-tabela-id="tcargo" data-caixa-id="caixa_cargo" data-url-id="' . $Raiz . '" data-bs-toggle="modal" data-bs-target="#MODAL_DIARIO_EXC"><i class="fa-regular fa-trash-can"></i> Excluir</a>' . "\n";
@@ -295,7 +295,7 @@ Modal_Exclusao($Raiz, $link_main);
   <?php echo $html_submenu ?> 
   <div class="card shadow card-personalizado">
     <div class="row">
-      <div class="col mx-auto" style="max-width:800px">
+      <div class="col-sm-12 mx-auto" style="max-width:800px">
         <div class="card mt-4">  
           <div class="card-header">
             <?php echo Titulo_Cartao($pagina_titulo); ?>

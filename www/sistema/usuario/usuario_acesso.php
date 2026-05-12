@@ -316,7 +316,7 @@ $html = $html . '        <form class="mb-0" action="usuario_edita.php" id="FUSUA
 $html = $html . '          <input type="hidden" id="RESET_USUARIOACESSO" name="RESET_USUARIOACESSO" value="">' . "\n";
 $html = $html . '          <input type="hidden" id="CAIXA_USUARIOACESSO" name="CAIXA_USUARIOACESSO" value="">' . "\n";
 $html = $html . '          <div class="row">' . "\n";
-$html = $html . '            <div class="col ml-2 mr-2">' . "\n";
+$html = $html . '            <div class="col-sm-12 ml-2 mr-2">' . "\n";
 $html = $html . '              <div class="form-row align-items-center">' . "\n";
 $html = $html . '                <div class="col-sm-3 my-1">' . "\n";
 $html = $html . '                  <label class="sr-only" for="PROCURAR">Procurar</label>' . "\n";
@@ -373,7 +373,7 @@ $html = $html . '          </form>' . "\n";
 // Botões de paginação inferior
 $html = $html . '          <div class="card-footer text-muted">' . "\n";
 if ($qtdpagina > 0 && ($qtdreg > $qtdlimite)) {
-  $html = $html . '            <div class="col mb-2">' . "\n";
+  $html = $html . '            <div class="col-sm-12 mb-2">' . "\n";
   $html = $html . '              <nav aria-label="Páginas de navegação">' . "\n";
   $html = $html . '                <ul class="pagination mb-0">' . "\n";
   $html = $html . '                  <li class="page-item"><a class="page-link" href="usuarioacesso.php?PG=FIRST' . (($_SESSION['SEARCHSTRING_USUARIOACESSO'] != "") ? '&PROCURAR=' . $_SESSION['SEARCHSTRING_USUARIOACESSO'] : "") . '">&laquo;</a></li>' . "\n";
@@ -397,7 +397,7 @@ if ($qtdpagina > 0 && ($qtdreg > $qtdlimite)) {
 }
 // Resumo da página
 if ($qtdregtotal > 0 and ($qtdregtotal != $qtdreg)) {
-  $html = $html . '            <div class="col mb-2">' . "\n";
+  $html = $html . '            <div class="col-sm-12 mb-2">' . "\n";
   if ($qtdregtotal - $qtdreg == 1) {
     $html = $html . '              <a href="javascript:redefinir_usuarioacesso();"><span>Há ' . ($qtdregtotal - $qtdreg) . ' registro que não satisfaz a pesquisa.</span></a><br />' . "\n";
   }
@@ -407,7 +407,7 @@ if ($qtdregtotal > 0 and ($qtdregtotal != $qtdreg)) {
   $html = $html . '            </div>' . "\n";
 }
 // EOF Resumo da página
-$html = $html . '            <div class="col text-center">' . "\n";
+$html = $html . '            <div class="col-sm-12 text-center">' . "\n";
 $html = $html . '              <button type="button" class="btn btn-sm btn-primary" id="BTN_USUARIOACESSO_INCLUIR" name="BTN_USUARIOACESSO_INCLUIR">Incluir</button>' . "\n";
 $html = $html . '            </div>' . "\n";
 $html = $html . '          </div>' . "\n";
@@ -479,7 +479,7 @@ $html = $html . '        </div>' . "\n";
   <div class="row">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-sm-12">
           <?php echo $html; ?>
         </div>
       </div>

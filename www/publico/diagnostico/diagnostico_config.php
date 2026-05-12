@@ -67,10 +67,8 @@ if ($Acao == "DIAGNOSTICAR") {
   $dti_usuario = $_POST["DTI_USUARIO"];
   $hrdia_usuario = $_POST["HRDIA_USUARIO"];
   $hrdiasab_usuario = $_POST["HRDIASAB_USUARIO"];
-  $diasemana_usuario = $_POST["DIASEMANA_USUARIO"];
-  
+  $diasemana_usuario = $_POST["DIASEMANA_USUARIO"];  
   $salario_usuario = FormataNumSQL($salario_usuario);
-
 	abre_db();
   $strsql = "
   select  
@@ -235,10 +233,10 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
 <div class="container">
   <div class="card shadow card-personalizado">
     <div class="row">
-      <div class="col mx-auto" style="max-width:800px">
+      <div class="col-sm-12 mx-auto" style="max-width:800px">
         <div class="card-body">
           <div class="row">
-            <div class="col-12">
+            <div class="col-sm-12">
               <div class="card shadow">
                 <div class="card-header text-bg-light" style="min-height:100px; padding-top:30px;">
                   <h5>Dados para diagnóstico</h5>
@@ -257,7 +255,7 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
                       <span class="texto-suave texto-menor">Obs: a lista de cargos está ordenada por CBO.</span>
                     </div>
                     <div class="row">
-                      <div class="col-6">
+                      <div class="col-sm-6">
                         <label for="SALARIO_USUARIO" class="form-label">Salário</label>
                         <div class="form-group mb-2 has-validation">
                           <input type="text" class="form-control" id="SALARIO_USUARIO" name="SALARIO_USUARIO" value="<?php echo $salario_usuario ?>" placeholder="Informe o valor do salário" required>
@@ -266,7 +264,7 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
                           </div>
                         </div>
                       </div>
-                      <div class="col-6">
+                      <div class="col-sm-6">
                         <label for="DTI_USUARIO" class="form-label">Data de início</label>
                         <div class="form-group mb-2 has-validation">
                           <input type="date" class="form-control" id="DTI_USUARIO" name="DTI_USUARIO" value="<?php echo $dti_usuario ?>" placeholder="dia/mes/ano" required>
@@ -277,9 +275,9 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-6">
+                      <div class="col-sm-6">
                         <div class="row">
-                          <div class="col-6">
+                          <div class="col-sm-6">
                             <label for="HRDIA_USUARIO" class="form-label">Horas por dia</label>
                             <div class="form-group mb-2 has-validation">
                               <input type="text" class="form-control" id="HRDIA_USUARIO" name="HRDIA_USUARIO" value="<?php echo $hrdia_usuario ?>" placeholder="Ex: 8" required>
@@ -288,7 +286,7 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
                               </div>
                             </div>
                           </div>
-                          <div class="col-6">
+                          <div class="col-sm-6">
                             <label for="HRDIASAB_USUARIO" class="form-label">Horas no Sábado</label>
                             <div class="form-group mb-2 has-validation">
                               <input type="text" class="form-control" id="HRDIASAB_USUARIO" name="HRDIASAB_USUARIO" value="<?php echo $hrdiasab_usuario ?>" placeholder="Ex: 4" required>
@@ -299,7 +297,7 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
                           </div>
                         </div>
                       </div>
-                      <div class="col-6">
+                      <div class="col-sm-6">
                         <label for="DIASEMANA_USUARIO" class="form-label">Dias por semana</label>
                         <div class="form-group mb-2 has-validation">
                           <input type="text" class="form-control" id="DIASEMANA_USUARIO" name="DIASEMANA_USUARIO" value="<?php echo $diasemana_usuario ?>" placeholder="Ex: 5" required>
@@ -318,7 +316,7 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
             </div>
           </div>
           <div class="row mt-4">
-            <div class="col-12">
+            <div class="col-sm-12">
               <div class="card">
                 <div class="card-body text-bg-light">
                   <span class="texto-corpo texto-menor"><i class="fa-solid fa-circle-info fa-lg"></i>&nbsp;Seus dados estão protegidos e serão usados apenas para calcular seus direitos e obrigações trabalhistas conforme a legislação atual.</span>

@@ -99,14 +99,13 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
 <div class="container">
   <div class="card shadow card-personalizado">
     <div class="row mt-2 ps-3 pe-3">
-      <div class="col-12">
+      <div class="col-sm-12">
         <h2>Diagnóstico do Trabalhador Doméstico</h2>
         <span class="texto-corpo">Selecione um tema para entender seus direitos e deveres.</span>
       </div>     
     </div>
-
-    <div class="row mt-5 ps-3 pe-3">
-      <div class="col-md-3">
+    <div class="row ps-3 pe-3">
+      <div class="col-sm-3 mt-5">
         <div class="card shadow">
           <div class="card-body" style="min-height:260px;">
             <a class="sem-decoracao" href="/publico/diagnostico/diagnostico_leiemprego.php">
@@ -119,7 +118,7 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3 mt-5">
         <div class="card shadow">
           <div class="card-body" style="min-height:260px;">
             <a class="sem-decoracao" href="/publico/diagnostico/diagnostico_oqueseucargofaz.php">
@@ -132,7 +131,7 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3 mt-5">
         <div class="card shadow">
           <div class="card-body" style="min-height:260px;">
             <a class="sem-decoracao" href="/publico/diagnostico/diagnostico_folhapagto.php">
@@ -145,7 +144,7 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3 mt-5">
         <div class="card shadow">
           <div class="card-body" style="min-height:260px;">
             <a class="sem-decoracao" href="/publico/diagnostico/diagnostico_ferias13.php">
@@ -159,9 +158,8 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
         </div>
       </div>
     </div>
-
-    <div class="row mt-5 ps-3 pe-3">
-      <div class="col-md-3">
+    <div class="row ps-3 pe-3">
+      <div class="col-sm-3 mt-5">
         <div class="card shadow">
           <div class="card-body" style="min-height:260px;">
             <a class="sem-decoracao" href="/publico/diagnostico/diagnostico_rescisao.php">
@@ -174,7 +172,7 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3 mt-5">
         <div class="card shadow">
           <div class="card-body" style="min-height:260px;">
             <a class="sem-decoracao" href="/publico/diagnostico/diagnostico_fgtsinss.php">
@@ -187,7 +185,7 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3 mt-5">
         <div class="card shadow">
           <div class="card-body" style="min-height:260px;">
             <a class="sem-decoracao" href="/publico/diagnostico/diagnostico_auxdoenca.php">
@@ -200,7 +198,7 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-sm-3 mt-5">
         <div class="card shadow">
           <div class="card-body" style="min-height:260px;">
             <a class="sem-decoracao" href="/publico/diagnostico/diagnostico_resumo.php">
@@ -214,50 +212,47 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
         </div>
       </div>
     </div>
-
     <div class="row mt-5 ps-3 pe-3">
-      <div class="col-12">        
+      <div class="col-sm-12">        
         <h4>Links Úteis</h4>        
       </div>     
-    <div class="row mt-5 ps-3 pe-3">
-      <div class="col-sm-6">
-        <div class="card shadow ms-auto" style="max-width:400px;">
-          <div class="card-body" style="min-height:80px;">
-            <div class="row">
-              <div class="col-2">
-                <div class="rounded text-center" style="width:48px; height:48px; background-color:#e9eff2; display: flex; justify-content: center; align-items: center;">
-                  <i class="fa-solid fa-earth-americas fa-2x" style="color:#1A5275;"></i>
+      <div class="row mt-5 ps-3 pe-3">
+        <div class="col-sm-6 mb-2">
+          <div class="card shadow ms-auto" style="max-width:400px;">
+            <div class="card-body" style="min-height:80px;">
+              <div class="row">
+                <div class="col-sm-2">
+                  <div class="rounded text-center" style="width:48px; height:48px; background-color:#e9eff2; display: flex; justify-content: center; align-items: center;">
+                    <i class="fa-solid fa-earth-americas fa-2x" style="color:#1A5275;"></i>
+                  </div>
                 </div>
-              </div>
-              <div class="col-8">
-                <a href="https://www.gov.br/pt-br/servicos/obter-a-carteira-de-trabalho" target="_blank" class="link-padrao text-nowrap">&nbsp;CTPS Digital</a>
-                <a href="https://www.gov.br/pt-br/servicos/obter-a-carteira-de-trabalho" target="_blank" class="text-nowrap sem-decoracao texto-suave texto-menor">&nbsp;Obtenha sua carteira de trabalho digital</a>
+                <div class="col-sm-8">
+                  <a href="https://www.gov.br/pt-br/servicos/obter-a-carteira-de-trabalho" target="_blank" class="link-padrao text-nowrap">&nbsp;CTPS Digital</a>
+                  <a href="https://www.gov.br/pt-br/servicos/obter-a-carteira-de-trabalho" target="_blank" class="text-nowrap sem-decoracao texto-suave texto-menor">&nbsp;Obtenha sua carteira de trabalho digital</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card shadow" style="max-width:400px">
-          <div class="card-body" style="min-height:80px;">
-            <div class="row">
-              <div class="col-2">
-                <div class="rounded text-center" style="width:48px; height:48px; background-color:#e9eff2; display: flex; justify-content: center; align-items: center;">
-                  <i class="fa-solid fa-landmark fa-2x" style="color:#1A5275;"></i>
-                </div>            
-              </div>
-              <div class="col-8">
-                <a href="https://www.gov.br/trabalho-e-emprego/pt-br" target="_blank" class="link-padrao text-nowrap">&nbsp;Ministério do Brabalho</a>
-                <a href="https://www.gov.br/trabalho-e-emprego/pt-br" target="_blank" class="text-nowrap sem-decoracao texto-suave texto-menor">&nbsp;Consultas e denúncias</a>
-              </div>
-            </div>            
+        <div class="col-sm-6 mb-2">
+          <div class="card shadow" style="max-width:400px;">
+            <div class="card-body" style="min-height:80px;">
+              <div class="row">
+                <div class="col-sm-2">
+                  <div class="rounded text-center" style="width:48px; height:48px; background-color:#e9eff2; display: flex; justify-content: center; align-items: center;">
+                    <i class="fa-solid fa-landmark fa-2x" style="color:#1A5275;"></i>
+                  </div>            
+                </div>
+                <div class="col-sm-8">
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br" target="_blank" class="link-padrao text-nowrap">&nbsp;Ministério do Brabalho</a>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br" target="_blank" class="text-nowrap sem-decoracao texto-suave texto-menor">&nbsp;Consultas e denúncias</a>
+                </div>
+              </div>            
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    </div>
-
   </div>
 </div>
 <?php include($Raiz . "include/php/rodape.php"); ?>

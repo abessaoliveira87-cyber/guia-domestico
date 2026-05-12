@@ -50,9 +50,7 @@ if (isset($_SESSION["CHAVE_USUARIO"])) {
 			$html_btn_entrar .= '              ' . $_SESSION["NOME_USUARIO"] . "\n";
 			$html_btn_entrar .= '            </a>' . "\n";
 			$html_btn_entrar .= '            <ul class="dropdown-menu">' . "\n";
-      $html_btn_entrar .= '              <li><a class="dropdown-item" href="/sistema/index.php">Principal</a></li>' . "\n";
-			$html_btn_entrar .= '              <li><a class="dropdown-item" href="/sistema/usuario">Usuários</a></li>' . "\n";
-			$html_btn_entrar .= '              <li><a class="dropdown-item" href="/sistema/autoexec/autoexec.php">DBU</li>' . "\n";
+      $html_btn_entrar .= '              <li><a class="dropdown-item" href="/sistema/index.php">Manu Principal Adm</a></li>' . "\n";			
 			$html_btn_entrar .= '              <li><hr class="dropdown-divider"></li>' . "\n";
 			$html_btn_entrar .= '              <li><a class="dropdown-item" href="/acesso/logout.php">Sair</a></li>' . "\n";
 			$html_btn_entrar .= '            </ul>' . "\n";
@@ -127,7 +125,7 @@ if (isset($_SESSION["CHAVE_USUARIO"])) {
 
 if ($html_btn_entrar == "") {
 	$html_btn_entrar .= "
-  <li class='nav-item d-none d-md-block'>\n
+  <li class='nav-item'>\n
     <button type='button' class='btn btn-sm btn-custom my-2 ml-2 my-sm-0' onclick=\"javascript:location='/publico/usuario/usuario_login.php'\">Entrar</button>\n
   </li>\n";
 }

@@ -88,27 +88,27 @@ if ($pos > 0) {
 <div class="container">
   <div class="card shadow card-personalizado">
     <div class="row mt-2 ps-3 pe-3">
-      <div class="col">
+      <div class="col-sm-12">
         <button type="button" id="BTN_VOLTAR" name="BTN_VOLTAR" class="btn btn-light texto-menor" onclick="javascript:location='/publico/diagnostico/diagnostico_menu.php'"><i class="fa-solid fa-arrow-left"></i> Voltar ao início</button>
       </div>
     </div>
     <div class="row mt-2 mb-2 ps-3 pe-3">
-      <div class="col-12">
+      <div class="col-sm-12">
         <h2>Auxílio-Doença e Afastamento</h2>
       </div>     
     </div>
     <div class="row mt-4 mb-3 ps-3 pe-3">
-      <div class="col-md-12">
+      <div class="col-sm-12">
         <h4 style="margin:0px;"><i class="fa-solid fa-circle-info fa-lg" style="color:#1A5275;"></i>&nbsp;O que é o Auxílio-Doença?</h4>        
       </div>
     </div>
     <div class="row mt-4 mb-3 ps-3 pe-3">
-      <div class="col-md-12">
+      <div class="col-sm-12">
         <span class="texto-corpo">O auxílio-doença, formalmente conhecido como auxílio por incapacidade temporária, é um benefício previdenciário concedido ao segurado do INSS que comprove, por meio de perícia médica, estar temporariamente incapaz para o seu trabalho habitual por mais de 15 dias consecutivos.</span>
       </div>
     </div>
     <div class="row mt-2 mb-2 ps-3 pe-3">
-      <div class="col-md-12">
+      <div class="col-sm-12">
         <div class="rounded border ps-3 pe-3 pt-3" style="background-color:#FFF">
           <h5 class="texto-regular"><i class="fa-regular fa-calendar fa-lg" style="color:#1A5275;"></i>&nbsp;Regras de Afastamentos no emprego doméstico</h5>
           <p class="texto-corpo">Diferente das empresas privadas, no emprego doméstico, a responsabilidade pelo pagamento dos primeiros 15 dias de atestado vai depender do total de dias de atestados. Se o 
@@ -117,18 +117,18 @@ if ($pos > 0) {
       </div>
     </div>
     <div class="row mt-2 mb-2 ps-3 pe-3">
-      <div class="col-md-12">
+      <div class="col-sm-12">
         <div class="rounded border ps-3 pe-3 pt-3" style="background-color:#000">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-sm-6">
               <h5 class="pb-3" style="color:#FFF">Cálculo do Benefício</h5>
             </div>
           </div>
           <div class="row pb-2">
-            <div class="col-md-6" style="color:#CBD5E1; border-right: 1px dashed #888;">
+            <div class="col-sm-6" style="color:#CBD5E1; border-right: 1px dashed #888;">
               <p class="texto-corpo" style="color:#CBD5E1;">O valor do auxílio-doença corresponde a vários fatores de remuneração dos últimos meses e quem faz esta avaliação é o INSS, nao o empregador , mas é referente  aos últimos pagamentos declarados no eSocial. Se houver algum erro precisa pedir o empregador para corrigir o quanto antes.</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6">
               <p class="texto-corpo texto-menor" style="color:#CBD5E1; font-style: italic;">"O valor incide na remumeração mensal + férias + 13Salário ou seja, o periodo que ficar afastado nao conta para férias ou 13Sálario. * Se ficar mais de 180 dias afastados perde o periodo de férias vigente em andamento, não os ja vencidos."</p>
             </div>
           </div>
@@ -136,70 +136,62 @@ if ($pos > 0) {
       </div>
     </div>
 
-    <div class="row mt-4 mb-3 ps-3 pe-3">
-      <div class="col-md-12">
+    <div class="row mt-4 mb-2 ps-3 pe-3">
+      <div class="col-sm-12">
         <h4>Como solicitar via 'Meu INSS'</h4>
       </div>
     </div>
 
-    <div class="row mt-4 mb-3 ps-3 pe-3">
-      <div class="col-md-6">        
+    <div class="row ps-3 pe-3">
+      <div class="col-sm-6">
         <div class="row">
-          <div class="col-md-1">
+          <div class="col-sm-1 mt-2">
             <div class="rounded-circle d-flex justify-content-center align-items-center" style="width: 32px; height: 32px; background-color: #1A5275;">
               <span class="texto-branco-regular">1</span>
             </div>
           </div>
-          <div class="col-md-11">
+          <div class="col-sm-11 mt-2 mb-3">
             <span class="texto-negrito">Acesse o Portal</span><br>
             <span class="texto-suave texto-menor">Entre no site ou aplicativo <strong>Meu INSS</strong> com seu CPF e senha Gov.br.</span>
           </div>
         </div>        
-      </div>
-      <div class="col-md-6">
         <div class="row">
-          <div class="col-md-1">
-            <div class="rounded-circle d-flex justify-content-center align-items-center" style="width: 32px; height: 32px; background-color: #1A5275;">
-              <span class="texto-branco-regular">3</span>
-            </div>
-          </div>
-          <div class="col-md-11">
-            <span class="texto-negrito">Envie Documentação</span><br>
-            <span class="texto-suave texto-menor">Anexe o atestado médico legível, documento de identidade e comprovante de residência.</span>
-          </div>
-        </div>        
-      </div>
-    </div>
-    <div class="row mt-4 mb-3 ps-3 pe-3">
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-md-1">
+          <div class="col-sm-1 mt-2">
             <div class="rounded-circle d-flex justify-content-center align-items-center" style="width: 32px; height: 32px; background-color: #1A5275;">
               <span class="texto-branco-regular">2</span>
             </div>
           </div>
-          <div class="col-md-11">
+          <div class="col-sm-11 mt-2 mb-3">
             <span class="texto-negrito">Agende a Perícia</span><br>
             <span class="texto-suave texto-menor">Clique em "<strong>Pedir Benefício por Incapacidade</strong>" e selecione "Auxílio-doença".</span>
           </div>
         </div>        
-      </div>
-      <div class="col-md-6">
+      </div>    
+      <div class="col-sm-6">
         <div class="row">
-          <div class="col-md-1">
+          <div class="col-sm-1 mt-2">
+            <div class="rounded-circle d-flex justify-content-center align-items-center" style="width: 32px; height: 32px; background-color: #1A5275;">
+              <span class="texto-branco-regular">3</span>
+            </div>
+          </div>
+          <div class="col-sm-11 mt-2 mb-3">
+            <span class="texto-negrito">Envie Documentação</span><br>
+            <span class="texto-suave texto-menor">Anexe o atestado médico legível, documento de identidade e comprovante de residência.</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-1 mt-2">
             <div class="rounded-circle d-flex justify-content-center align-items-center" style="width: 32px; height: 32px; background-color: #1A5275;">
               <span class="texto-branco-regular">4</span>
             </div>
           </div>
-          <div class="col-md-11">
+          <div class="col-sm-11 mt-2 mb-3">
             <span class="texto-negrito">Acompanhe o Pedido</span><br>
             <span class="texto-suave texto-menor">Fique atento às notificações no app para saber o local e hora da perícia presencial (se necessário).</span>
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
 </div>
 <?php include($Raiz . "include/php/rodape.php"); ?>

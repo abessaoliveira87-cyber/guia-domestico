@@ -61,42 +61,45 @@ if (!isset($_SESSION['AMBIENTE'])) {
   <div class="card shadow" style="padding-bottom:80px;">
     <div class="card-body">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <div class="row">
-            <div class="col-md-12 rounded mb-4" style="background-color:#EFF6FF">
+            <div class="col-sm-12 rounded mb-4" style="background-color:#EFF6FF">
               <span style="color:#2563EB">SEU GUIA DE DIREITOS</span>
             </div>
-            <div class="col-md-12 mb-5">
-              <span style="font-size: 4.2rem; font-weight:800; line-height: 1">
+            <div class="col-sm-12 mb-5">
+              <span class="manchete">
                 Trabalhador Doméstico, fique por dentro dos seus <span class="texto-regular">direitos e deveres</span>. 
               </span>
             </div>
-            <div class="col-md-12 mb-4">
+            <div class="col-sm-12 mb-4">
               <span class="texto-corpo">
                 Cadastre-se agora de forma simples e 100% gratuita para ter um diagnóstico rápido e personalizado sobre sua situação trabalhista.
               </span>
             </div>
-            <div class="col-md-12">
+            <div class="col-sm-12">
               <button type="button" id="BTN_CADASTRO" name="BTN_CADASTRO" class="btn btn-lg btn-custom" onClick="javascript:location='/publico/usuario/usuario_cadastro.php';" style="width:100%">Cadastre-se agora</button>
             </div>
-            <div class="col-md-12 mt-5">
+            <div class="col-sm-12 mt-4 text-center">
+              <a class="link-padrao" href="/publico/usuario/usuario_login.php"><span>Já tem cadastro? Faça seu login</span></a>
+            </div>
+            <div class="col-sm-12 mt-4 mb-4">
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-sm-4 text-center">
                   <i class="fa-solid fa-check" style="color:#34D399"></i>100% Gratuito
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4 text-center">
                   <i class="fa-solid fa-certificate" style="color:#34D399"></i>Dados protegidos
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4 text-center">
                   <i class="fa-solid fa-bolt" style="color:#34D399"></i>Resultado imadiato
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="row mb-5">
-            <div class="col-md-6">
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-6 mb-5">
               <div class="card shadow">
                 <div class="card-body" style="min-height:150px;">
                   <a class="sem-decoracao" href="/publico/diagnostico/diagnostico_leiemprego.php">
@@ -109,7 +112,7 @@ if (!isset($_SESSION['AMBIENTE'])) {
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6 mb-5">
               <div class="card shadow">
                 <div class="card-body" style="min-height:150px;">
                   <a class="sem-decoracao" href="/publico/diagnostico/diagnostico_folhapagto.php">
@@ -123,8 +126,8 @@ if (!isset($_SESSION['AMBIENTE'])) {
               </div>
             </div>
           </div>
-          <div class="row mb-5">
-            <div class="col-md-6">
+          <div class="row">
+            <div class="col-sm-6 mb-5">
               <div class="card shadow">
                 <div class="card-body" style="min-height:150px;">
                   <a class="sem-decoracao" href="/publico/diagnostico/diagnostico_ferias13.php">
@@ -137,7 +140,7 @@ if (!isset($_SESSION['AMBIENTE'])) {
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6 mb-5">
               <div class="card shadow">
                 <div class="card-body" style="min-height:150px;">
                   <a class="sem-decoracao" href="/publico/diagnostico/diagnostico_fgtsinss.php">
@@ -152,7 +155,7 @@ if (!isset($_SESSION['AMBIENTE'])) {
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-sm-6 mb-5">
               <div class="card shadow">
                 <div class="card-body" style="min-height:150px;">
                   <a class="sem-decoracao" href="/publico/diagnostico/diagnostico_rescisao.php">
@@ -165,7 +168,7 @@ if (!isset($_SESSION['AMBIENTE'])) {
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6 mb-5">
               <div class="card shadow">
                 <div class="card-body" style="min-height:150px;">
                   <a class="sem-decoracao" href="/publico/diagnostico/diagnostico_auxdoenca.php">

@@ -110,46 +110,46 @@ if ($chave_cargo != "") {
 <div class="container">
   <div class="card shadow card-personalizado">
     <div class="row mt-2 ps-3 pe-3">
-      <div class="col">
+      <div class="col-sm-12">
         <button type="button" id="BTN_VOLTAR" name="BTN_VOLTAR" class="btn btn-light texto-menor" onclick="javascript:location='/publico/diagnostico/diagnostico_menu.php'"><i class="fa-solid fa-arrow-left"></i> Voltar ao início</button>
       </div>
     </div>
     <div class="row mt-2 mb-2 ps-3 pe-3">
-      <div class="col-12">
+      <div class="col-sm-12">
         <h2>O Que Seu Cargo Faz</h2>
         <span class="texto-secundario">Entenda as atividades permitidas, os limites da função e as responsabilidades previstas para o cargo de empregada doméstica de acordo com a legislação vigente.</span>
       </div>     
     </div>
     <div class="row mt-2 mb-2 ps-3 pe-3">
-      <div class="col-12">
+      <div class="col-sm-12">
         <span class="h2 texto-negrito"><?php echo $descr_cargo ?>&nbsp;</span><span class="h2 texto-negrito texto-regular"><?php echo "(" . $cbo_cargo . ")"; ?></span>
       </div>     
     </div>
     <div class="row mt-2 mb-2 ps-3 pe-3">
-      <div class="col-12">
+      <div class="col-sm-12">
         <h4><i class="fa-regular fa-circle-check texto-regular"></i>&nbsp;Atividades Principais</h4>
       </div>     
     </div>
     <div class="row mt-4 mb-3 ps-3 pe-3">
-      <div class="col-md-12">
+      <div class="col-sm-12">
         <div class="rounded shadow-right border ps-3 pe-3 pt-3 pb-3" style="background-color:#FFF;">
           <span class="texto-secundario texto-maior"><?php echo $descrdetalhada_cargo; ?></span>
         </div>
       </div>
 <!--      
-      <div class="col-md-4">
+      <div class="col-sm-4">
         <div class="rounded border ps-3 pe-3 pt-3 pb-3" style="background-color:#FFF;">
           <h4>Limpeza e Organização</h4>
           <span class="texto-secundario texto-menor">Higienização de cômodos, móveis, utensílios domésticos e organização geral da residência para manter o bem-estar da família.</span>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-4">
         <div class="rounded border ps-3 pe-3 pt-3 pb-3" style="background-color:#FFF;">
           <h4>Culinária</h4>
           <span class="texto-secundario texto-menor">Preparo de refeições diárias para os moradores, seguindo as orientações de cardápio e restrições alimentares acordadas.</span>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-4">
         <div class="rounded border ps-3 pe-3 pt-3 pb-3" style="background-color:#FFF;">
           <h4>Lavanderia</h4>
           <span class="texto-secundario texto-menor">Lavar, passar e organizar roupas pessoais, de cama, mesa e banho, cuidando da conservação de diferentes tipos de tecidos.</span>
@@ -158,25 +158,25 @@ if ($chave_cargo != "") {
 -->      
     </div>
     <div class="row mt-4 mb-3 ps-3 pe-3">
-      <div class="col-md-12">
+      <div class="col-sm-12">
         <div class="rounded ps-3 pe-3 pt-3 pb-3" style="background-color:#f4f1f3; min-height: 100px;">
           <div class="row mb-4">
-            <div class="col">
+            <div class="col-sm-12">
               <h5><i class="fa-solid fa-ban" style="color:#1A5275"></i>&nbsp;O Que Não Faz Parte do Cargo (Limites)</h5>
             </div>
           </div>
           <div class="row mb-2">
-            <div class="col">          
+            <div class="col-sm-12">          
               <span class="texto-corpo"><i class="fa-solid fa-circle-minus"></i>&nbsp;<strong>Atividades comerciais:</strong> Auxiliar em negócios próprios do empregador, como vendas, entregas ou produção de itens para comércio.</span><br>          
             </div>
           </div>
           <div class="row mb-2">
-            <div class="col">          
+            <div class="col-sm-12">          
               <span class="texto-corpo"><i class="fa-solid fa-circle-minus"></i>&nbsp;<strong>Cuidados profissionais:</strong> Atuar como pet sitter profissional, jardineiro ou cuidador de idosos/crianças de forma integral se não for a função contratada especificamente.</span><br>          
             </div>
           </div>
           <div class="row mb-2">
-            <div class="col">          
+            <div class="col-sm-12">          
               <span class="texto-corpo"><i class="fa-solid fa-circle-minus"></i>&nbsp;<strong>Riscos à integridade:</strong> Atividades que exijam esforço físico extremo, uso de produtos químicos perigosos sem EPI ou reparos estruturais (eletricidade, hidráulica pesada).</span><br>
             </div>
           </div>
@@ -185,15 +185,15 @@ if ($chave_cargo != "") {
     </div>    
 
     <div class="row mt-4 mb-3 ps-3 pe-3">
-      <div class="col-md-12">
+      <div class="col-sm-12">
         <div class="rounded shadow-left border ps-3 pe-3 pt-3 pb-3" style="background-color:#FFF;">
           <div class="row mb-4">
-            <div class="col">
+            <div class="col-sm-12">
               <h5><i class="fa-solid fa-triangle-exclamation" style="color:#1A5275"></i>&nbsp;Importante: Desvio de Função</h5>              
             </div>
           </div>
           <div class="row mb-2">
-            <div class="col">          
+            <div class="col-sm-12">          
               <span class="texto-secundario">Realizar atividades substancialmente diferentes do cargo principal de forma constante e sistemática pode caracterizar acúmulo ou desvio de função. Nestes casos, o trabalhador pode ter direito a adicionais salariais retroativos ou readequação do contrato de trabalho. É fundamental que as tarefas extras sejam acordadas formalmente e remuneradas de acordo.</span>
             </div>
           </div>

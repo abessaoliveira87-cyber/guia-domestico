@@ -148,24 +148,24 @@ else {
       </div>
     </div>
     <div class="row mt-2 ps-3 pe-3">
-      <div class="col-12">
+      <div class="col-sm-12">
         <h2>Férias e 13º Salário</h2>      
       </div>     
     </div>
     <div class="row mt-2 ps-3 pe-3">
-      <div class="col-12">
+      <div class="col-sm-12">
         <span class="texto-corpo">Detalhamento completo dos benefícios trabalhistas calculados com base no salário mensal de <?php echo $lbl_vlsalbase_ferias; ?>.</span>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-sm-6">
         <div class="card-body" style="padding-top:0px;">
           <div class="row">
-            <div class="col-12">
+            <div class="col-sm-12">
               <div class="card" style="min-height: 460px;">
                 <div class="card-body" style="min-height:100px; padding-top:30px;">
                   <div class="row mb-4">
-                    <div class="col-md-12">
+                    <div class="col-sm-12">
                       <div class="d-flex">
                         <div class="pe-2">
                           <div class="rounded d-flex align-items-center justify-content-center" style="width:48px; height:48px; background-color:#afc2cf; float:left;">
@@ -179,31 +179,31 @@ else {
                     </div>
                   </div>
                   <div class="row mb-4">
-                    <div class="col-12">
+                    <div class="col-sm-12">
                       <span class="texto-corpo texto-menor">Gratificação natalina devida a todo trabalhador sob regime CLT. Corresponde a 1/12 da remuneração por mês trabalhado.</span>
                     </div>
                   </div>
                   <div class="row mt-2 ps-2 pe-2">
-                    <div class="col-md-12 rounded" style="min-height:80px; background-color: #F8F6F6">
+                    <div class="col-sm-12 rounded" style="min-height:80px; background-color: #F8F6F6">
                       <div class="row align-items-center" style="height: 80px;">
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                           <h5 class="texto-corpo texto-menor" style="margin:0">1ª PARCELA (50%)</h5>
                           <span class="texto-corpo texto-menor">Até 30 de Novembro</span>
                         </div>
-                        <div class="col-md-6 text-end">
+                        <div class="col-sm-6 text-end">
                           <span class="h4 texto-negrito"><?php echo $lbl_vlparcela1_13 ?></span>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="row mt-3 ps-2 pe-2">
-                    <div class="col-md-12 rounded" style="min-height:80px; background-color: #F8F6F6">
+                    <div class="col-sm-12 rounded" style="min-height:80px; background-color: #F8F6F6">
                       <div class="row align-items-center" style="height: 80px;">
-                        <div class="col-md-6">
-                          <h5 class="texto-corpo texto-menor" style="margin:0">1ª PARCELA (50%)</h5>
-                          <span class="texto-corpo texto-menor">Até 30 de Novembro</span>
+                        <div class="col-sm-6">
+                          <h5 class="texto-corpo texto-menor" style="margin:0">2ª PARCELA (50%)</h5>
+                          <span class="texto-corpo texto-menor">Até 20 de Dezembro</span>
                         </div>
-                        <div class="col-md-6 text-end">
+                        <div class="col-sm-6 text-end">
                           <span class="h4 texto-negrito"><?php echo $lbl_vlparcela2_13 ?></span>
                         </div>
                       </div>
@@ -211,24 +211,24 @@ else {
                   </div>
                   <hr>
                   <div class="row ps-2 pe-2">
-                    <div class="col-md-12 rounded">
+                    <div class="col-sm-12 rounded">
                       <div class="row align-items-center">
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                           <span class="texto-corpo texto-menor">Desconto INSS (Estimado)</span>
                         </div>
-                        <div class="col-md-6 text-end">
+                        <div class="col-sm-6 text-end">
                           <span class="text-danger"><?php echo $lbl_vlded_inss_13 ?></span>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="row mt-4 ps-2 pe-2">
-                    <div class="col-md-12 rounded">
+                    <div class="col-sm-12 rounded">
                       <div class="row align-items-center">
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                           <span class="h4 texto-negrito">Total Líquido Estimado</span>
                         </div>
-                        <div class="col-md-6 text-end">
+                        <div class="col-sm-6 text-end">
                           <span class="h4 texto-negrito"><?php echo $lbl_vlliq_estimado_13 ?></span>
                         </div>
                       </div>
@@ -241,14 +241,14 @@ else {
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-sm-6">
         <div class="card-body" style="padding-top:0px;">
           <div class="row">
-            <div class="col-12">            
+            <div class="col-sm-12">            
               <div class="card" style="min-height: 460px;">
                 <div class="card-body" style="min-height:100px; padding-top:30px;">
                   <div class="row mb-4">
-                    <div class="col-md-12">
+                    <div class="col-sm-12">
                       <div class="d-flex">
                         <div class="pe-2">
                           <div class="rounded d-flex align-items-center justify-content-center" style="width:48px; height:48px; background-color:#afc2cf; float:left;">
@@ -262,31 +262,31 @@ else {
                     </div>
                   </div>
                   <div class="row mb-4">
-                    <div class="col-md-12">
+                    <div class="col-sm-12">
                       <span class="texto-corpo texto-menor">Direito ao descanso anual remunerado após cada período de 12 meses de vigência do contrato de trabalho (período aquisitivo).</span>
                     </div>
                   </div>
                   <div class="row mt-2 ps-2 pe-2">
-                    <div class="col-md-12 rounded" style="min-height:80px; background-color: #F8F6F6">
+                    <div class="col-sm-12 rounded" style="min-height:80px; background-color: #F8F6F6">
                       <div class="row align-items-center" style="height: 80px;">
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                           <h5 class="texto-corpo texto-menor" style="margin:0">SALÁRIO BASE DE FÉRIAS</h5>
                           <span class="texto-corpo texto-menor">Período: 1 ano trabalhado</span>
                         </div>
-                        <div class="col-md-6 text-end">
+                        <div class="col-sm-6 text-end">
                           <span class="h4 texto-negrito"><?php echo $lbl_vlsalbase_ferias ?></span>
                         </div>
                       </div>                                      
                     </div>
                   </div>
                   <div class="row mt-3 ps-2 pe-2">
-                    <div class="col-md-12 rounded" style="min-height:80px; background-color: #F8F6F6">
+                    <div class="col-sm-12 rounded" style="min-height:80px; background-color: #F8F6F6">
                       <div class="row align-items-center" style="height: 80px;">
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                           <h5 class="texto-corpo texto-menor" style="margin:0">1/3 CONSTITUCIONAL</h5>
                           <span class="texto-corpo texto-menor">Adicional obrigatório</span>
                         </div>
-                        <div class="col-md-6 text-end">
+                        <div class="col-sm-6 text-end">
                           <span class="h4 texto-negrito"><?php echo $lbl_vlterco_salbase_ferias ?></span>
                         </div>
                       </div>
@@ -294,36 +294,36 @@ else {
                   </div>
                   <hr>
                   <div class="row ps-2 pe-2">
-                    <div class="col-md-12 rounded">
+                    <div class="col-sm-12 rounded">
                       <div class="row align-items-center">
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                           <span class="texto-corpo texto-menor">Valor Bruto (Salário + 1/3)</span>
                         </div>
-                        <div class="col-md-6 text-end">
+                        <div class="col-sm-6 text-end">
                           <span class="texto-negrito"><?php echo $lbl_vlsalbruto_ferias ?></span>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="row ps-2 pe-2">
-                    <div class="col-md-12 rounded">
+                    <div class="col-sm-12 rounded">
                       <div class="row align-items-center">
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                           <span class="texto-corpo texto-menor">Desconto INSS (Estimado)</span>
                         </div>
-                        <div class="col-md-6 text-end">
+                        <div class="col-sm-6 text-end">
                           <span class="text-danger"><?php echo $lbl_vlded_inss_ferias ?></span>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="row mt-4 ps-2 pe-2">
-                    <div class="col-md-12 rounded">
+                    <div class="col-sm-12 rounded">
                       <div class="row align-items-center">
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                           <span class="h4 texto-negrito">Total Líquido de Férias</span>
                         </div>
-                        <div class="col-md-6 text-end">
+                        <div class="col-sm-6 text-end">
                           <span class="h4 texto-negrito"><?php echo $lbl_vlliq_estimado_ferias ?></span>
                         </div>
                       </div>
@@ -336,40 +336,35 @@ else {
         </div>
       </div>
     </div>
-    <div class="row mt-4 ps-5 pe-5">
-      <div class="col-12">
-        <div class="row ps-5 pe-5">
-          <div class="col-md-12 rounded pt-4" style="background-color:#f4f1f3; min-height: 100px;">
-            <div class="row mb-2">
-              <div class="col">
-                <h5><i class="fa-solid fa-circle-info fa-lg" style="color:#EC5B13"></i>&nbsp;Observações Importantes</h5>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <ul>
-                  <li class="mb-2">
-                    <span class="texto-corpo texto-menor">Os valores de INSS são calculados com base nas tabelas progressivas vigentes e podem variar conforme atualizações governamentais.</span>
-                  </li>
-                  <li class="mb-2">
-                    <span class="texto-corpo texto-menor">O 13º salário gera saldo de FGTS para a conta do funcionário, e o empregador paga este imposto  na guia mensal eSocial.</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul>
-                  <li class="mb-2">
-                    <span class="texto-corpo texto-menor">O pagamento das férias deve ser efetuado até 2 dias antes do início do período de gozo do descanso.</span>
-                  </li>
-                  <li class="mb-2">
-                    <span class="texto-corpo texto-menor">A simulação assume 30 dias de férias e zero faltas injustificadas no período aquisitivo.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>        
+    <div class="row mt-4 mb-3 ms-3 me-3">
+      <div class="col-sm-12 rounded pt-4 pb-4" style="background-color:#f4f1f3; min-height: 100px;">      
+        <div class="row mb-2">
+          <div class="col-sm-12">
+            <h5><i class="fa-solid fa-circle-info fa-lg" style="color:#EC5B13"></i>&nbsp;Observações Importantes</h5>
           </div>
         </div>
-
+        <div class="row">
+          <div class="col-sm-6">
+            <ul>
+              <li class="mb-2">
+                <span class="texto-corpo texto-menor">Os valores de INSS são calculados com base nas tabelas progressivas vigentes e podem variar conforme atualizações governamentais.</span>
+              </li>
+              <li class="mb-2">
+                <span class="texto-corpo texto-menor">O 13º salário gera saldo de FGTS para a conta do funcionário, e o empregador paga este imposto  na guia mensal eSocial.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul>
+              <li class="mb-2">
+                <span class="texto-corpo texto-menor">O pagamento das férias deve ser efetuado até 2 dias antes do início do período de gozo do descanso.</span>
+              </li>
+              <li class="mb-2">
+                <span class="texto-corpo texto-menor">A simulação assume 30 dias de férias e zero faltas injustificadas no período aquisitivo.</span>
+              </li>
+            </ul>
+          </div>
+        </div>        
       </div>
     </div>    
   </div>

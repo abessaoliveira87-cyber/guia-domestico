@@ -176,7 +176,7 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
 <div class="container">
   <div class="card shadow card-personalizado">
     <div class="row mt-2 ps-2 pe-2 gx-1">
-      <div class="col-md-4">
+      <div class="col-sm-4">
         <div class="card">
           <div class="card-header bg-transparent">            
             <button class="btn btn-sm btn-light sem-decoracao texto-menor" id="BTN_VOLTAR" name="BTN_VOLTAR" onclick="javascript:location='/publico/diagnostico/diagnostico_menu.php'"><i class="fa-solid fa-arrow-left"></i> Voltar ao início</button>
@@ -184,34 +184,34 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
           </div>
           <div class="card-body">
             <div class="row">
-              <div class="col-12">
+              <div class="col-sm-12">
                 <span class="texto-negrito texto-suave texto-menor2">CARGO</span><br>
                 <span class="texto-negrito texto-maior texto-regular" title="<?php echo $descr_cargo; ?>"><?php echo $lbl_descr_cargo; ?></span><br>
                 <span class="texto-suave texto-menor3">CBO: <?php echo $lbl_cbo_cargo; ?></span><br>
               </div>
             </div>
             <div class="row mt-3">
-              <div class="col-md-6">
+              <div class="col-sm-6">
                 <span class="texto-negrito texto-suave texto-menor2">ADMISSÃO</span><br>
                 <span class="texto-negrito"><?php echo $lbl_dti_usuario; ?></span>
               </div>
-              <div class="col-md-6">
+              <div class="col-sm-6">
                 <span class="texto-negrito texto-suave texto-menor2">SALÁRIO BASE</span><br>                
                 <span class="texto-negrito"><?php echo $lbl_salario_usuario; ?></span>                
               </div>
             </div>
             <div class="row mt-3">
-              <div class="col-md-6">
+              <div class="col-sm-6">
                 <span class="texto-negrito texto-suave texto-menor2">INSS (DEDUÇÃO)</span><br>
                 <span class="text-danger texto-negrito"><?php echo $lbl_vlded_inss; ?></span>
               </div>
-              <div class="col-md-6">
+              <div class="col-sm-6">
                 <span class="texto-negrito texto-suave texto-menor2">IRPF (DEDUÇÃO)</span><br>                
                 <span class="text-danger texto-negrito"><?php echo $lbl_vlded_irpf; ?></span>
               </div>
             </div>
             <div class="row mt-3">
-              <div class="col-12">
+              <div class="col-sm-12">
                 <div class="rounded pt-2 ps-2 pe-2 pb-2" style="background-color: #EFF6FF">
                   <span class="texto-negrito texto-suave texto-menor2 texto-italico">LÍQUIDO ESTIMADO</span><br>
                   <span class="text-success"><strong><?php echo $lbl_vlliq_estimado; ?></strong></span>
@@ -225,13 +225,13 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
           </div>
         </div>
         <div class="row mt-2">
-          <div class="col-md-12">
+          <div class="col-sm-12">
             <h6 class="texto-regular mt-2"><i class="fa-solid fa-circle-dollar-to-slot"></i>&nbsp;Resumo de Direitos e Encargos</h6>
             <span class="texto-negrito texto-suave texto-menor2 d-none" style="padding-left:20px">|&nbsp;ADICIONAIS</span>
           </div>
         </div>
         <div class="row mt-2 d-none">
-          <div class="col-md-6 ps-4">
+          <div class="col-sm-6 ps-4">
             <div class="pt-2 ps-3 pe-3 pb-2 border rounded" style="background-color:#F8FAFC;">
               <span class="texto-menor2 texto-negrito texto-suave">DSR SOBRE H.E.</span><br>
               <span class="texto-negrito">???? R$ 6,00/h</span><br>
@@ -240,45 +240,45 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
           </div>
         </div>
         <div class="row mt-2">
-          <div class="col-md-12">
+          <div class="col-sm-12">
             <span class="texto-negrito texto-suave texto-menor2" style="padding-left:20px">|&nbsp;ESTIMATIVAS ANUAIS</span>
           </div>
         </div>
         <div class="row mt-2 ps-3">
-          <div class="col-12">
+          <div class="col-sm-12">
             <div class="pt-2 ps-3 pe-3 pb-2 border rounded" style="background-color:#EFF6FF;">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-sm-6">
                   <span class="texto-menor2 texto-negrito texto-suave">FÉRIAS (TOTAL LÍQUIDO)</span><br>
                   <span class="texto-menor2 texto-suave">Salário + 1/3 - Descontos</span><br>
                 </div>
-                <div class="col-6 text-end">
+                <div class="col-sm-6 text-end">
                   <span class="texto-maior2 texto-regular texto-negrito"><?php echo $lbl_vlliq_estimado_ferias ?></span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 mt-2">
+          <div class="col-sm-12 mt-2">
             <div class="pt-2 ps-3 pe-3 pb-2 border rounded" style="background-color:#EFF6FF;">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-sm-6">
                   <span class="texto-menor2 texto-negrito texto-suave">13º SALÁRIO (ANUAL)</span><br>
                   <span class="texto-menor2 texto-suave">Valor bruto estimado</span><br>
                 </div>
-                <div class="col-6 text-end">
+                <div class="col-sm-6 text-end">
                   <span class="texto-maior2 texto-regular texto-negrito"><?php echo $lbl_vlbruto_13 ?></span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 mt-2">
+          <div class="col-sm-12 mt-2">
             <div class="pt-2 ps-3 pe-3 pb-2 border rounded" style="background-color:#F8FAFC;">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-sm-6">
                   <span class="texto-menor2 texto-negrito texto-suave">FGTS MENSAL (8%)</span><br>
                   <span class="texto-menor2 texto-suave">Guia DAE Mensal</span><br>
                 </div>
-                <div class="col-6 text-end">
+                <div class="col-sm-6 text-end">
                   <span class="texto-maior2 texto-regular texto-negrito"><?php echo $lbl_vlfgts_mensal ?></span>
                 </div>
               </div>
@@ -286,10 +286,10 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
           </div>
         </div>
         <div class="row mt-2 ps-3">
-          <div class="col-12 mt-2">
+          <div class="col-sm-12 mt-2">
             <div class="pt-2 ps-3 pe-3 pb-2 border rounded" style="background-color:#F8FAFC;">
               <div class="row">
-                <div class="col-12">
+                <div class="col-sm-12">
                   <span class="texto-menor2 texto-negrito">INFORMAÇÃO: DSR E DESCONTOS</span><br>
                   <span class="texto-menor2 texto-suave">DSR é o Descanso Semanal Remunerado. Faltas injustificadas podem gerar desconto do dia e do DSR da semana.</span><br>
                 </div>
@@ -298,30 +298,30 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
           </div>
         </div>
       </div>
-      <div class="col-md-8">
+      <div class="col-sm-8">
         <div class="row gx-1">
-          <div class="col-md-12">
+          <div class="col-sm-12">
             <div class="card">
               <div class="card-header bg-transparent">
                 <h6 class="texto-regular mt-2"><i class="fa-solid fa-calculator texto-regular"></i>&nbsp;Indicadores de Jornada e Valor</h6>
               </div>
               <div class="card-body">
                 <div class="row gx-1">
-                  <div class="col-md-4">
+                  <div class="col-sm-4">
                     <div class="p-2 border rounded text-center" style="min-height: 90px;">
                       <span class="texto-menor2 texto-negrito texto-suave">CARGA SEMANAL</span><br>
                       <span class="texto-maior3 texto-negrito"><?php echo $lbl_qtd_hrsemana ?></span><br>
                       <span class="texto-suave texto-menor texto-italico"><?php echo $lbl_txt_hrsemana ?></span>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-sm-4">
                     <div class="p-2 border rounded text-center" style="min-height: 90px;">                    
                       <span class="texto-menor2 texto-negrito texto-suave">VALOR HORA</span><br>
                       <span class="texto-maior3 texto-negrito"><?php echo $lbl_val_hr ?></span><br>
                       <span class="texto-suave texto-menor texto-italico">Base Cálculo Mensal</span>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-sm-4">
                     <div class="p-2 border rounded text-center" style="min-height: 90px;">                    
                       <span class="texto-menor2 texto-negrito texto-suave">VALOR DIÁRIA</span><br>
                       <span class="texto-maior3 texto-negrito"><?php echo $lbl_val_dia ?></span><br>
@@ -331,28 +331,28 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
                 </div>
 
                 <div class="row mt-2 gx-1">
-                  <div class="col-md-3">
+                  <div class="col-sm-3">
                     <div class="pt-2 pb-2 border rounded text-center" style="background-color:#F8FAFC; min-height: 80px;">
                       <span class="texto-menor2 texto-negrito texto-suave">EXTRA 50%</span><br>
                       <span class="texto-negrito"><?php echo $lbl_val_hrextra_50 ?></span><br>
                       <span class="texto-suave texto-menor2 texto-italico">Segunda à Sábado</span>
                     </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-sm-3">
                     <div class="pt-2 pb-2 border rounded text-center" style="background-color:#F8FAFC; min-height: 80px;">
                       <span class="texto-menor2 texto-negrito texto-suave">EXTRA 100%</span><br>
                       <span class="texto-negrito"><?php echo $lbl_val_hrextra_100 ?></span><br>
                       <span class="texto-suave texto-menor2 texto-italico">Domingo e Feriados</span>
                     </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-sm-3">
                     <div class="pt-2 pb-2 border rounded text-center" style="background-color:#F8FAFC; min-height: 80px;">
                       <span class="texto-menor2 texto-negrito texto-suave">ADIC. NOTURNO</span><br>
                       <span class="texto-negrito"><?php echo $lbl_val_hradic ?></span><br>
                       <span class="texto-suave texto-menor2 texto-italico">+20% sobre hora normal</span>
                     </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-sm-3">
                     <div class="pt-2 pb-2 border rounded text-center" style="background-color:#F8FAFC; min-height: 80px;">
                       <span class="texto-menor2 texto-negrito texto-suave">AUX. VIAGEM</span><br>
                       <span class="texto-negrito"><?php echo $lbl_val_hrviagem ?></span><br>
@@ -363,14 +363,14 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
               </div>              
             </div>         
           </div>
-          <div class="col-md-5 d-none">
+          <div class="col-sm-5 d-none">
             <div class="card">
               <div class="card-header bg-transparent">                            
                 <h6 class="texto-regular mt-2"><i class="fa-regular fa-heart texto-regular"></i>&nbsp;Afastamento e Auxílio-Doença</h6>
               </div>
               <div class="card-body">
                 <div class="row gx-1">
-                  <div class="col-md-12">
+                  <div class="col-sm-12">
                     <div class="pt-2 ps-2 pe-2 pb-2 rounded" style="background-color:#EFF6FF; min-height: 100px;">                     
                       <span class="texto-menor2 texto-negrito texto-suave">BENEFÍCIO ESTIMADO (91%)</span><br>
                       <span class="texto-maior3 texto-negrito texto-regular"><?php echo $lbl_vlafasta ?></span><br>
@@ -379,7 +379,7 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
                   </div>
                 </div>
                 <div class="row mt-2 gx-1">
-                  <div class="col-md-12">
+                  <div class="col-sm-12">
                     <div class="pt-2 ps-2 pe-2 pb-2 rounded" style="background-color:#F8FAFC; min-height: 100px;">                     
                       <span class="texto-menor2 texto-negrito texto-suave">REGRAS IMPORTANTES</span><br>
                       <ul class="texto-menor2 texto-suave mt-2 mb-0" style="padding-left:20px;">
@@ -395,25 +395,25 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
           </div>
         </div>
         <div class="row mt-2 gx-1">
-          <div class="col-md-12">
+          <div class="col-sm-12">
             <div class="card">
               <div class="card-header bg-transparent">
                 <h6 class="texto-regular mt-2"><i class="fa-solid fa-calculator texto-regular"></i>&nbsp;Estimativas de Rescisão</h6>
               </div>              
               <div class="card-body">
                 <div class="row gx-1">
-                  <div class="col-md-6">
+                  <div class="col-sm-6">
                     <div class="rounded border p-2">
                       <div class="row">
-                        <div class="col-12">
+                        <div class="col-sm-12">
                           <span class="texto-negrito texto-menor"><i class="fa-regular fa-clock" style="color:#F59E0B"></i>&nbsp;1. Pedido de Demissão (Contrato de Experiência)</span>
                         </div>
                       </div>
                       <div class="row mt-3 gx-1">
-                        <div class="col-5">
+                        <div class="col-sm-5">
                           <span class="texto-menor2">Ocorre durante os primeiros 45 ou 90 dias. Se o empregado sai antes do fim, pode haver indenização de metade dos dias restantes ao empregador.</span>
                         </div>
-                        <div class="col-7">
+                        <div class="col-sm-7">
                           <div class="rounded border p-2" style="background-color: #F8FAFC;">
                             <p class="texto-menor texto-negrito texto-suave">Direitos e Pagamentos</p>
                             <p class="texto-menor2 texto-suave" style="line-height: 1;"><i class="fa-regular fa-clock" style="color:#1F5F7A"></i>&nbsp;Saldo de Salário (dias trabalhados)</p>
@@ -424,18 +424,18 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-sm-6">
                     <div class="rounded border p-2">
                       <div class="row">
-                        <div class="col-12">
+                        <div class="col-sm-12">
                           <span class="texto-negrito texto-menor"><i class="fa-solid fa-person-walking-luggage" style="color:#64748B"></i>&nbsp;4. Demissão com Aviso Trabalhado</span>
                         </div>
                       </div>
                       <div class="row mt-3 gx-1">
-                        <div class="col-md-5">
+                        <div class="col-sm-5">
                           <span class="texto-menor2">O empregado trabalha o aviso com redução de 2 horas na jornada diária ou folga de 7 dias corridos ao final, sem prejuízo do salário.</span>
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-sm-7">
                           <div class="rounded border p-2" style="background-color: #F8FAFC;">
                             <p class="texto-menor texto-negrito texto-suave">Direitos e Pagamentos</p>
                             <p class="texto-menor2 texto-suave" style="line-height: 1;"><i class="fa-regular fa-clock" style="color:#1F5F7A"></i>&nbsp;Saldo de Salário (mês do aviso)</p>
@@ -448,18 +448,18 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
                   </div>
                 </div>
                 <div class="row mt-3 gx-1">
-                  <div class="col-md-6">
+                  <div class="col-sm-6">
                     <div class="rounded border p-2">
                       <div class="row">
-                        <div class="col-12">
+                        <div class="col-sm-12">
                           <span class="texto-negrito texto-menor"><i class="fa-solid fa-user-minus" style="color:#3B82F6"></i>&nbsp;2. Pedido de Demissão (Após Experiência)</span>
                         </div>
                       </div>
                       <div class="row mt-3 gx-1">
-                        <div class="col-5">
+                        <div class="col-sm-5">
                           <span class="texto-menor2">O empregado deve cumprir 30 dias de aviso prévio ou permitir o desconto do valor correspondente em sua rescisão.</span>
                         </div>
-                        <div class="col-7">
+                        <div class="col-sm-7">
                           <div class="rounded border p-2" style="background-color: #F8FAFC;">
                             <p class="texto-menor texto-negrito texto-suave">Direitos e Pagamentos</p>
                             <p class="texto-menor2 texto-suave" style="line-height: 1;"><i class="fa-regular fa-clock" style="color:#1F5F7A"></i>&nbsp;Saldo de Salário</p>
@@ -470,18 +470,18 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-sm-6">
                     <div class="rounded border p-2" style="background-color:#FEF2F2">
                       <div class="row">
-                        <div class="col-12">
+                        <div class="col-sm-12">
                           <span class="texto-negrito texto-menor"><i class="fa-solid fa-gavel" style="color:#DC2626"></i>&nbsp;5. Demissão por Justa Causa</span>
                         </div>
                       </div>
                       <div class="row mt-3 gx-1">
-                        <div class="col-md-5">
+                        <div class="col-sm-5">
                           <span class="texto-menor2"></span>
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-sm-7">
                           <div class="p-2">
                             <p class="texto-menor texto-negrito" style="color: #DC2626">Direitos e Pagamentos</p>
                             <p class="texto-menor2 texto-suave" style="line-height: 1;"><i class="fa-solid fa-ban" style="color:#DC2626"></i>&nbsp;Saldo de Salário</p>
@@ -494,18 +494,18 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
                   </div>
                 </div>
                 <div class="row mt-3 gx-1">
-                  <div class="col-md-6">
+                  <div class="col-sm-6">
                     <div class="rounded border p-2">
                       <div class="row">
-                        <div class="col-12">
+                        <div class="col-sm-12">
                           <span class="texto-negrito texto-menor"><i class="fa-regular fa-money-bill-1" style="color:#1F5F7A"></i>&nbsp;3. Demissão com Aviso Indenizado</span>
                         </div>
                       </div>
                       <div class="row mt-3 gx-1">
-                        <div class="col-5">
+                        <div class="col-sm-5">
                           <span class="texto-menor2">O empregador encerra o contrato imediatamente e paga o valor do aviso. O tempo de aviso projeta o término do contrato para fins de 13º e férias.</span>
                         </div>
-                        <div class="col-7">
+                        <div class="col-sm-7">
                           <div class="rounded border p-2" style="background-color: #F8FAFC;">
                             <p class="texto-menor texto-negrito texto-suave">Direitos e Pagamentos</p>
                             <p class="texto-menor2 texto-suave" style="line-height: 1;"><i class="fa-regular fa-clock" style="color:#1F5F7A"></i>&nbsp;Verbas Integrais (Saldo, 13º, Férias)</p>
@@ -516,21 +516,21 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-sm-6">
                     <div class="p-2">
                       <div class="row">
-                        <div class="col-12">
+                        <div class="col-sm-12">
                           <span class="texto-negrito texto-menor"><i class="fa-solid fa-link" style="color:#1A5275"></i>&nbsp;Links Úteis</span>
                         </div>
                       </div>
                       <div class="row mt-3 gx-1">
-                        <div class="col-md-5">
+                        <div class="col-sm-5">
                           <p class="d-none"><a href="#" class="sem-decoracao texto-menor2"><i class="fa-solid fa-arrow-right-from-bracket" style="color:#2563EB"></i>&nbsp;eSocial Doméstico</a></p>
                           <p><a href="#" class="sem-decoracao texto-menor2"><i class="fa-solid fa-gavel" style="color:#F97316"></i>&nbsp;Ministério do Trabalho</a></p>
                           <p><a href="#" class="sem-decoracao texto-menor2"><i class="fa-solid fa-shield-halved" style="color:#16A34A"></i>&nbsp;Portal FGTS</a></p>
                           <p class="d-none"><a href="#" class="sem-decoracao texto-menor2"><i class="fa-regular fa-circle-question" style="color:#3B82F6"></i>&nbsp;Guia de Direitos</a></p>
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-sm-7">
                           <div class="p-2">
                             <button type="button" class="btn btn-custom mb-2" style="width: 100%" onclick="javascript:location='diagnostico_resumo_pdf.php'"><i class="fa-regular fa-file-pdf"></i>&nbsp;Exportar para PDF</button>                            
                             <button type="button" class="btn btn-success mt-2" style="width: 100%" onclick="javascript:location='diagnostico_config.php'"><i class="fa-solid fa-rotate-right"></i>&nbsp;Novo Diagnóstico</button>

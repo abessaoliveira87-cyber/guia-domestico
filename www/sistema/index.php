@@ -62,7 +62,7 @@ if (!isset($_SESSION['AMBIENTE'])) {
   <div class="card shadow" style="padding-bottom:80px;">
     <div class="card-body">
       <div class="row">
-        <div class="col-12">          
+        <div class="col-sm-12">          
           <h1>Painel de Administração</h1>
         </div>
       </div>

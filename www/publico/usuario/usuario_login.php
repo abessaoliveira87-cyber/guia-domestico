@@ -70,6 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $salario_usuario = "";
     $dti_usuario = "";
     $hrdia_usuario = "";
+    $hrdiasab_usuario = "";
     $diasemana_usuario = "";
     abre_db();
     $strsql = "
@@ -95,6 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
       $salario_usuario = $tusuario['salario_usuario'];
       $dti_usuario = $tusuario['dti_usuario'];
       $hrdia_usuario = $tusuario['hrdia_usuario'];
+      $hrdiasab_usuario= $tusuario['hrdiasab_usuario'];
       $diasemana_usuario = $tusuario['diasemana_usuario'];
       $ok = true;
     }
@@ -133,6 +135,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
       $_SESSION["SALARIO_USUARIO"] = $salario_usuario;
       $_SESSION["DTI_USUARIO"] = $dti_usuario;
       $_SESSION["HRDIA_USUARIO"] = $hrdia_usuario;
+      $_SESSION["HRDIASAB_USUARIO"] = $hrdiasab_usuario;
       $_SESSION["DIASEMANA_USUARIO"] = $diasemana_usuario;
       $url_redirec = $Raiz . "publico/usuario/index.php";      
     }

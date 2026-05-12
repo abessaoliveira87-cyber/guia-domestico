@@ -208,21 +208,21 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
 <div class="container">
   <div class="card shadow card-personalizado">
     <div class="row mt-2 ps-3 pe-3">
-      <div class="col">
+      <div class="col-sm-12">
         <button type="button" id="BTN_VOLTAR" name="BTN_VOLTAR" class="btn btn-light texto-menor" onclick="javascript:location='/publico/diagnostico/diagnostico_menu.php'"><i class="fa-solid fa-arrow-left"></i> Voltar ao início</button>
       </div>
     </div>
     <div class="row mt-2 mb-2 ps-3 pe-3">
-      <div class="col-12">
+      <div class="col-sm-12">
         <h2>Guia de Contribuições e Impostos</h2>
         <span class="texto-secundario">Entenda como funcionam os depósitos do FGTS feitos pelo seu empregador e os descontos de INSS e IRRF que impactam seu salário líquido.</span>
       </div>     
     </div>
-    <div class="row mt-4 mb-3 ps-3 pe-3">
-      <div class="col-md-6">
+    <div class="row mb-3 ps-3 pe-3">
+      <div class="col-sm-6 mt-4">
         <div class="rounded border ps-3 pe-3 pt-3 pb-3" style="background-color:#FFF;">
           <div class="row mb-3">
-            <div class="col">
+            <div class="col-sm-12">
               <div class="d-flex">
                 <div class="pe-2">
                   <div class="rounded d-flex align-items-center justify-content-center" style="width:48px; height:48px; background-color:#e8eef1; float:left;">
@@ -236,19 +236,19 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
             </div>
           </div>
           <div class="row mb-3">
-            <div class="col">
+            <div class="col-sm-12">
               <span class="texto-secundario texto-menor">O FGTS é um depósito mensal de 8% do seu salário bruto realizado pelo empregador em uma conta da Caixa Econômica Federal em seu nome. Não é descontado do seu salário.</span>
             </div>
           </div>        
           <div class="row mb-3">
-            <div class="col">
+            <div class="col-sm-12">
               <div class="rounded" style="min-height:80px; background-color: #F8F6F6">
                 <div class="row align-items-center ps-3 pe-3" style="height: 80px;">
-                  <div class="col-md-6">
+                  <div class="col-sm-6">
                     <h5 class="texto-secundario texto-menor" style="margin:0">Depósito Mensam (8%)</h5>
                     <span class="texto-suave texto-menor">Exemplo para salário de <?php echo $lbl_salario_usuario; ?></span>
                   </div>
-                  <div class="col-md-6 text-end">
+                  <div class="col-sm-6 text-end">
                     <span class="h4 texto-secundario texto-negrito"><?php echo $lbl_vlfgts_mensal ?></span>
                   </div>
                 </div>
@@ -256,14 +256,14 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
             </div>
           </div>        
           <div class="row mb-3 d-none">
-            <div class="col">
+            <div class="col-sm-12">
               <div class="rounded" style="min-height:80px; background-color: #F8F6F6">
                 <div class="row align-items-center ps-3 pe-3" style="height: 80px;">
-                  <div class="col-md-6">
+                  <div class="col-sm-6">
                     <h5 class="texto-secundario texto-menor" style="margin:0">Saldo Acumulado</h5>
                     <span class="texto-suave texto-menor">Consulte seu saldo total através do aplicativo FGTS oficial.</span>
                   </div>
-                  <div class="col-md-6 text-end">
+                  <div class="col-sm-6 text-end">
                     <i class="fa-solid fa-arrow-trend-up texto-secundario"></i>                    
                   </div>
                 </div>
@@ -272,10 +272,10 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
           </div>        
         </div>        
       </div>
-      <div class="col-md-6">
+      <div class="col-sm-6 mt-4">
         <div class="rounded border ps-3 pe-3 pt-3 pb-3" style="background-color:#FFF;">
           <div class="row mb-3">
-            <div class="col">
+            <div class="col-sm-12">
               <div class="d-flex">
                 <div class="pe-2">
                   <div class="rounded d-flex align-items-center justify-content-center" style="width:48px; height:48px; background-color:#e8eef1; float:left;">
@@ -289,19 +289,19 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
             </div>
           </div>
           <div class="row mb-3">
-            <div class="col">
+            <div class="col-sm-12">
               <span class="texto-secundario texto-menor">Estes são os valores retidos mensalmente do seu salário bruto para garantir sua aposentadoria e cumprir obrigações fiscais.</span>
             </div>
           </div>        
           <div class="row mb-3">
-            <div class="col">
+            <div class="col-sm-12">
               <div class="rounded" style="min-height:80px; background-color: #FFF">
                 <div class="row align-items-center ps-3 pe-3" style="height: 80px;">
-                  <div class="col-md-6">
+                  <div class="col-sm-6">
                     <h5 class="texto-secundario texto-menor" style="margin:0">INSS (Previdência)</h5>
                     <span class="texto-suave texto-menor"><?php echo $lbl_aliq_progressiva ?></span>                     
                   </div>
-                  <div class="col-md-6 text-end">
+                  <div class="col-sm-6 text-end">
                     <span class="h4 texto-secundario texto-negrito text-danger"><?php echo $lbl_vlded_inss ?></span>
                   </div>
                   <hr>
@@ -310,14 +310,14 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
             </div>
           </div>
           <div class="row mb-3">
-            <div class="col">
+            <div class="col-sm-12">
               <div class="rounded" style="min-height:80px; background-color: #FFF">
                 <div class="row align-items-center ps-3 pe-3" style="height: 80px;">
-                  <div class="col-md-6">
+                  <div class="col-sm-6">
                     <h5 class="texto-secundario texto-menor" style="margin:0">IRRF (Imposto de Renda)</h5>
                     <span class="texto-suave texto-menor">Faixa de isenção aplicada</span>
                   </div>
-                  <div class="col-md-6 text-end">
+                  <div class="col-sm-6 text-end">
                     <span class="texto-negrito texto-suave">R$ 0,00</span>
                   </div>
                   <hr>
@@ -326,10 +326,10 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
             </div>
           </div>        
           <div class="row mb-3">
-            <div class="col">
+            <div class="col-sm-12">
               <div class="rounded" style="min-height:80px; background-color: #FFF; border: 2px dotted  #f9cdb8 !important;">
                 <div class="row align-items-center ps-3 pe-3" style="height: 80px;">
-                  <div class="col-md-12">                    
+                  <div class="col-sm-12">                    
                     <span class="texto-secundario texto-menor texto-italico">"O empregador contribui com 8% e você também contribui conforme a tabela oficial, garantindo sua cobertura previdenciária total."</span>
                   </div>
                 </div>                

@@ -334,11 +334,11 @@ while ($tusuario = $qusuario->fetch(PDO::FETCH_ASSOC)) {
   $etq .= '              <tr>' . "\n";
   $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA">' . str_pad($chave_usuario, 6, "0", STR_PAD_LEFT) . '</td>' . "\n";
   $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA">' . $nome_usuario . '</td>' . "\n";
-  $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA">' . $email_usuario . '</td>' . "\n";  
-  $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA">' . $dtc_usuario . '</td>' . "\n";  
+  $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA d-none d-sm-block">' . $email_usuario . '</td>' . "\n";  
+  $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA d-none d-sm-block">' . $dtc_usuario . '</td>' . "\n";  
   $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA text-center">' . $sit_usuario . '</td>' . "\n";
-  $etq .= '                <td class="text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#MODAL_DIARIO_EXC" id="SHOW_DIARIO_EXC" data-id="' . $chave_usuario . '" data-campo-id="chave_usuario" data-tabela-id="tusuario" data-url-id="' . $Raiz . '" data-caixa-id="caixa_usuario"><i class="fas fa-minus-circle text-danger" title="Excluir"></a></td>' . "\n";
-  $etq .= '                <td class="text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#MODAL_DIARIO"     id="SHOW_DIARIO"     data-id="' . $chave_usuario . '" data-campo-id="chave_usuario" data-tabela-id="tusuario" data-url-id="' . $Raiz . '"><i class="fas fa-database" title="Diário do registro"></i></a></td>' . "\n";
+  $etq .= '                <td class="text-center"><a class="link-padrao" href="#" data-bs-toggle="modal" data-bs-target="#MODAL_DIARIO_EXC" id="SHOW_DIARIO_EXC" data-id="' . $chave_usuario . '" data-campo-id="chave_usuario" data-tabela-id="tusuario" data-url-id="' . $Raiz . '" data-caixa-id="caixa_usuario"><i class="fa-regular fa-trash-can" title="Excluir"></i></a></td>' . "\n";
+  $etq .= '                <td class="text-center"><a class="link-padrao" href="#" data-bs-toggle="modal" data-bs-target="#MODAL_DIARIO"     id="SHOW_DIARIO"     data-id="' . $chave_usuario . '" data-campo-id="chave_usuario" data-tabela-id="tusuario" data-url-id="' . $Raiz . '"><i class="fas fa-database" title="Diário do registro"></i></a></td>' . "\n"; 
   $etq .= '              </tr>' . "\n";
   $contetq = $contetq + 1;
   $qtdregpagina = $qtdregpagina + 1;
@@ -377,7 +377,7 @@ $html_pesq .= '            </span>' . "\n";
 $html_pesq .= '            <button type="button" class="btn btn-sm btn-custom" id="BTN_PROCURAR" name="BTN_PROCURAR" onclick="javascript:procurar_usuario();">Ok</button>' . "\n";
 $html_pesq .= '          </div>' . "\n";
 $html_pesq .= '        </div>' . "\n";
-$html_pesq .= '        <div class="col-6">' . "\n";
+$html_pesq .= '        <div class="col-sm-6">' . "\n";
 $html_pesq .= $btn_redefinir;
 $html_pesq .= '          <button type="button" class="btn btn-sm btn-secondary" id="BTN_LIXEIRA" name="BTN_LIXEIRA" onclick="javascript:caixa_usuario(\'' . $caixa_usuario . '\')">' . (($caixa_usuario == 1) ? 'Lixeira' : 'Cadastrados') . '</button>' . "\n";
 $html_pesq .= '        </div>' . "\n";
@@ -399,8 +399,8 @@ if ($etq != "") {
   $html .= '              <tr>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/usuario/usuario.php?ORDEM=CHAVE_USUARIO">Chave</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/usuario/usuario.php?ORDEM=NOME_USUARIO">Nome</a></th>' . "\n";
-  $html .= '                <th><a href="' . $Raiz . 'sistema/usuario/usuario.php?ORDEM=EMAIL_USUARIO">E-mail</a></th>' . "\n";
-  $html .= '                <th><a href="' . $Raiz . 'sistema/usuario/usuario.php?ORDEM=DTC_USUARIO">Cadastro</a></th>' . "\n";
+  $html .= '                <th class="d-none d-sm-block"><a href="' . $Raiz . 'sistema/usuario/usuario.php?ORDEM=EMAIL_USUARIO">E-mail</a></th>' . "\n";
+  $html .= '                <th class="d-none d-sm-block"><a href="' . $Raiz . 'sistema/usuario/usuario.php?ORDEM=DTC_USUARIO">Cadastro</a></th>' . "\n";
   $html .= '                <th class="text-center"><a href="' . $Raiz . 'sistema/usuario/usuario.php?ORDEM=SIT_USUARIO">Situação</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/usuario/usuario.php?ORDEM=CAIXA_USUARIO"> </a></th>' . "\n";
   $html .= '                <th></th>' . "\n";
@@ -415,7 +415,7 @@ $html .= '        </form>' . "\n";
 // Botões de paginação inferior
 $html .= '        <div class="card-footer text-muted">' . "\n";
 if ($qtdpagina > 0 && ($qtdreg > $qtdlimite)) {
-  $html .= '          <div class="col mb-2">' . "\n";
+  $html .= '          <div class="col-sm-12 mb-2">' . "\n";
   $html .= '            <nav aria-label="Páginas de navegação">' . "\n";
   $html .= '              <ul class="pagination pagination-sm mb-0">' . "\n";
   $html .= '                <li class="page-item"><a class="page-link" href="usuario.php?PG=FIRST' . (($_SESSION['SEARCHSTRING_USUARIO'] != "") ? '&PROCURAR=' . $_SESSION['SEARCHSTRING_USUARIO'] : "") . '">&laquo;</a></li>' . "\n";
@@ -439,7 +439,7 @@ if ($qtdpagina > 0 && ($qtdreg > $qtdlimite)) {
 }
 // Resumo da página
 if ($qtdregtotal > 0 and ($qtdregtotal != $qtdreg)) {
-  $html .= '          <div class="col mb-2">' . "\n";
+  $html .= '          <div class="col-sm-12 mb-2">' . "\n";
   if ($qtdregtotal - $qtdreg == 1) {
     $html .= '            <a href="javascript:redefinir_usuario();"><span>Há ' . ($qtdregtotal - $qtdreg) . ' registro que não satisfaz a pesquisa.</span></a><br />' . "\n";
   }
@@ -449,7 +449,7 @@ if ($qtdregtotal > 0 and ($qtdregtotal != $qtdreg)) {
   $html .= '          </div>' . "\n";
 }
 // EOF Resumo da página
-$html .= '          <div class="col text-center">' . "\n";
+$html .= '          <div class="col-sm-12 text-center">' . "\n";
 $html .= '            <button type="button" class="btn btn-sm btn-custom" id="BTN_USUARIO_INCLUIR" name="BTN_USUARIO_INCLUIR">Incluir</button>' . "\n";
 $html .= '          </div>' . "\n";
 $html .= '        </div>' . "\n";
@@ -509,7 +509,7 @@ $html .= '      </div>' . "\n";
   <?php include($Raiz . "include/php/menu.php"); ?>
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col-sm-12">
         <?php
         Modal_Diario($Raiz);
         Modal_Exclusao($Raiz, $link_main);
@@ -519,12 +519,12 @@ $html .= '      </div>' . "\n";
   </div>
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col-sm-12">
         <?php echo $html; ?>
       </div>
     </div>
     <div class="row mt-4 Texto-Rodape">
-      <div class="col">
+      <div class="col-sm-12">
         <h5>Legendas</h5>
         <span><i class="fas fa-minus-circle" style="min-width:40px;" align="center"></i>Excluir registro</span><br />
         <span><i class="fas fa-database" style="min-width:40px;" align="center"></i>Diário do registro</span>

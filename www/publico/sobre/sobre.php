@@ -61,15 +61,15 @@ if (!isset($_SESSION['AMBIENTE'])) {
   <div class="card shadow card-personalizado">
     <div class="card-body">
       <div class="row">
-        <div class="col text-center mb-5">
+        <div class="col-sm-12 text-center mb-5">
           <h2 class="mt-5 mb-3">Como funciona o diagnóstico</h2>
           <p class="texto-corpo">Em apenas 3 passos você terá um relatório completo em PDF com todos os seus dados estruturados.</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <div class="row">
-            <div class="col-md-10">
+            <div class="col-sm-10">
               <div class="card shadow">
                 <div class="card-body" style="min-height:150px;">
                   <div class="rounded text-center mb-3" style="max-width:48px; min-height:48px; display: flex; justify-content: center; align-items: center;">
@@ -80,16 +80,16 @@ if (!isset($_SESSION['AMBIENTE'])) {
                 </div>
               </div>
             </div>
-            <div class="col-md-2" style="display: flex; justify-content: center; align-items: center;">
+            <div class="col-sm-2" style="display: flex; justify-content: center; align-items: center;">
               <i class="fa-solid fa-arrow-right fa-2x"></i>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <div class="row">
-            <div class="col-md-1">
+            <div class="col-sm-1">
             </div>
-            <div class="col-md-10">
+            <div class="col-sm-10">
               <div class="card shadow">
                 <div class="card-body" style="min-height:150px;">
                   <div class="rounded text-center mb-3" style="max-width:48px; min-height:48px; display: flex; justify-content: center; align-items: center;">
@@ -100,16 +100,16 @@ if (!isset($_SESSION['AMBIENTE'])) {
                 </div>
               </div>            
             </div>
-            <div class="col-md-1">
+            <div class="col-sm-1">
             </div>
           </div>
         </div>        
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <div class="row">
-            <div class="col-md-2" style="display: flex; justify-content: center; align-items: center;">
+            <div class="col-sm-2" style="display: flex; justify-content: center; align-items: center;">
               <i class="fa-solid fa-arrow-right fa-2x"></i>
             </div>            
-            <div class="col-md-10">
+            <div class="col-sm-10">
               <div class="card shadow">
                 <div class="card-body" style="min-height:150px;">
                   <div class="rounded text-center mb-3" style="max-width:48px; min-height:48px; display: flex; justify-content: center; align-items: center;">                
@@ -123,12 +123,10 @@ if (!isset($_SESSION['AMBIENTE'])) {
         </div>
       </div>             
       <div class="row mt-5">
-        <div class="col-md-12 text-center">
-          <button type="button" id="BTN_CADASTRO" name="BTN_CADASTRO" class="btn btn-lg btn-custom" onClick="javascript:location='/publico/diagnostico/diagnostico_config.php';" style="width:50%">Vamos começar</button>      
+        <div class="col-sm-12 text-center">
+          <button type="button" id="BTN_CADASTRO" name="BTN_CADASTRO" class="btn btn-lg btn-custom" onClick="javascript:location='/publico/diagnostico/diagnostico_config.php';" style="min-width:200px">Vamos começar</button>      
         </div>
       </div>
-
-
     </div>
   </div>
 </div>

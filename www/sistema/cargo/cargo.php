@@ -334,7 +334,7 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
   $etq .= '                <td data-id_dbg="' . $chave_cargo . '" class="SELECIONA_LINHA">' . $esocial_cargo . '</td>' . "\n";  
   $etq .= '                <td data-id_dbg="' . $chave_cargo . '" class="SELECIONA_LINHA">' . $descr_cargo . '</td>' . "\n";
   $etq .= '                <td data-id_dbg="' . $chave_cargo . '" class="SELECIONA_LINHA">' . $cbo_cargo . '</td>' . "\n";  
-  $etq .= '                <td data-id_dbg="' . $chave_cargo . '" class="SELECIONA_LINHA text-center">' . $sit_cargo . '</td>' . "\n";
+  $etq .= '                <td data-id_dbg="' . $chave_cargo . '" class="SELECIONA_LINHA d-none d-sm-block text-center">' . $sit_cargo . '</td>' . "\n";
   $etq .= '                <td class="text-center"><a class="link-padrao" href="#" data-bs-toggle="modal" data-bs-target="#MODAL_DIARIO_EXC" id="SHOW_DIARIO_EXC" data-id="' . $chave_cargo . '" data-campo-id="chave_cargo" data-tabela-id="tcargo" data-url-id="' . $Raiz . '" data-caixa-id="caixa_cargo"><i class="fa-regular fa-trash-can" title="Excluir"></a></td>' . "\n";
   $etq .= '                <td class="text-center"><a class="link-padrao" href="#" data-bs-toggle="modal" data-bs-target="#MODAL_DIARIO"     id="SHOW_DIARIO"     data-id="' . $chave_cargo . '" data-campo-id="chave_cargo" data-tabela-id="tcargo" data-url-id="' . $Raiz . '"><i class="fas fa-database" title="Diário do registro"></i></a></td>' . "\n";
   $etq .= '              </tr>' . "\n";
@@ -375,7 +375,7 @@ $html_pesq .= '            </span>' . "\n";
 $html_pesq .= '            <button type="button" class="btn btn-sm btn-custom" id="BTN_PROCURAR" name="BTN_PROCURAR" onclick="javascript:procurar_cargo();">Ok</button>' . "\n";
 $html_pesq .= '          </div>' . "\n";
 $html_pesq .= '        </div>' . "\n";
-$html_pesq .= '        <div class="col-6">' . "\n";
+$html_pesq .= '        <div class="col-sm-6">' . "\n";
 $html_pesq .= $btn_redefinir;
 $html_pesq .= '          <button type="button" class="btn btn-sm btn-secondary" id="BTN_LIXEIRA" name="BTN_LIXEIRA" onclick="javascript:caixa_cargo(\'' . $caixa_cargo . '\')">' . (($caixa_cargo == 1) ? 'Lixeira' : 'Cadastrados') . '</button>' . "\n";
 $html_pesq .= '        </div>' . "\n";
@@ -399,7 +399,7 @@ if ($etq != "") {
   $html .= '                <th><a href="' . $Raiz . 'sistema/cargo/cargo.php?ORDEM=ESOCIAL_CARGO">E-Social</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/cargo/cargo.php?ORDEM=DESCR_CARGO">Descrição</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/cargo/cargo.php?ORDEM=CBO_CARGO">CBO</a></th>' . "\n";
-  $html .= '                <th class="text-center"><a href="' . $Raiz . 'sistema/cargo/cargo.php?ORDEM=SIT_CARGO">Situação</a></th>' . "\n";
+  $html .= '                <th class="d-none d-sm-block text-center"><a href="' . $Raiz . 'sistema/cargo/cargo.php?ORDEM=SIT_CARGO">Situação</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/cargo/cargo.php?ORDEM=CAIXA_CARGO"> </a></th>' . "\n";
   $html .= '                <th></th>' . "\n";
   $html .= '              </tr>' . "\n";
@@ -413,7 +413,7 @@ $html .= '        </form>' . "\n";
 // Botões de paginação inferior
 $html .= '        <div class="card-footer text-muted">' . "\n";
 if ($qtdpagina > 0 && ($qtdreg > $qtdlimite)) {
-  $html .= '          <div class="col mb-2">' . "\n";
+  $html .= '          <div class="col-sm-12 mb-2">' . "\n";
   $html .= '            <nav aria-label="Páginas de navegação">' . "\n";
   $html .= '              <ul class="pagination pagination-sm mb-0">' . "\n";
   $html .= '                <li class="page-item"><a class="page-link" href="cargo.php?PG=FIRST' . (($_SESSION['SEARCHSTRING_CARGO'] != "") ? '&PROCURAR=' . $_SESSION['SEARCHSTRING_CARGO'] : "") . '">&laquo;</a></li>' . "\n";
@@ -437,7 +437,7 @@ if ($qtdpagina > 0 && ($qtdreg > $qtdlimite)) {
 }
 // Resumo da página
 if ($qtdregtotal > 0 and ($qtdregtotal != $qtdreg)) {
-  $html .= '          <div class="col mb-2">' . "\n";
+  $html .= '          <div class="col-sm-12 mb-2">' . "\n";
   if ($qtdregtotal - $qtdreg == 1) {
     $html .= '            <a href="javascript:redefinir_cargo();"><span>Há ' . ($qtdregtotal - $qtdreg) . ' registro que não satisfaz a pesquisa.</span></a><br />' . "\n";
   }
@@ -447,7 +447,7 @@ if ($qtdregtotal > 0 and ($qtdregtotal != $qtdreg)) {
   $html .= '          </div>' . "\n";
 }
 // EOF Resumo da página
-$html .= '          <div class="col text-center">' . "\n";
+$html .= '          <div class="col-sm-12 text-center">' . "\n";
 $html .= '            <button type="button" class="btn btn-sm btn-custom" id="BTN_CARGO_INCLUIR" name="BTN_CARGO_INCLUIR">Incluir</button>' . "\n";
 $html .= '          </div>' . "\n";
 $html .= '        </div>' . "\n";

@@ -117,17 +117,17 @@ $lbl_descr_cargo = $descr_cargo;
 $lbl_chave_cargo = $chave_cargo;
 $lbl_cbo_cargo = $cbo_cargo;
 $lbl_dti_usuario = FormataData($dti_usuario, "d/m/Y");
-$lbl_vlvenc_usuario = "R$ " . FormataNumero($vlvenc_usuario, 2);
+$lbl_vlvenc_usuario = FormataNumero($vlvenc_usuario, 2);
 if (strlen($lbl_descr_cargo) > 35) {
   $lbl_descr_cargo = substr($lbl_descr_cargo, 0, 35) . "...";
 }
-$lbl_vlded_inss = "R$ " . FormataNumero($vlded_inss, 2);
+$lbl_vlded_inss = FormataNumero($vlded_inss, 2);
 $per_vlded_inss = 0;
 if ($vlded_inss > 0) {
   $per_vlded_inss = round($vlded_inss / $salario_usuario * 100, 2);
 }
 $lbl_per_vlded_inss = FormataPercentual($per_vlded_inss, 2);
-$lbl_vlded_irpf = "R$ " . FormataNumero($vlded_irpf, 2);
+$lbl_vlded_irpf = FormataNumero($vlded_irpf, 2);
 $per_vlded_irpf = 0;
 if ($vlded_irpf > 0) {
   $per_vlded_irpf = 0;
@@ -135,13 +135,13 @@ if ($vlded_irpf > 0) {
 $lbl_per_vlded_irpf = FormataPercentual($per_vlded_irpf, 2);
 
 $vldesc_usuario = $vlded_inss + $vlded_irpf;
-$lbl_vldesc_usuario = "R$ " . FormataNumero($vldesc_usuario, 2);
+$lbl_vldesc_usuario = FormataNumero($vldesc_usuario, 2);
 
 if ($vlliq_estimado < 0) {
   $lbl_vlliq_estimado = "<span class='text-danger'>-R$ " . FormataNumero($vlvenc_usuario - $vldesc_usuario, 2) . "</span>";
 }
 else {
-  $lbl_vlliq_estimado = "R$ " . FormataNumero($vlvenc_usuario - $vldesc_usuario, 2);
+  $lbl_vlliq_estimado = FormataNumero($vlvenc_usuario - $vldesc_usuario, 2);
 }
 $per_vldesc = round($vldesc_usuario / $vlvenc_usuario * 100, 2);
 $lbl_per_vldesc = FormataPercentual($per_vldesc, 2);
@@ -204,18 +204,17 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
 <div class="container">
   <div class="card shadow card-personalizado">
     <div class="row mt-2 ps-3 pe-3">
-      <div class="col">
+      <div class="col-sm-12">
         <button type="button" id="BTN_VOLTAR" name="BTN_VOLTAR" class="btn btn-light texto-menor" onclick="javascript:location='/publico/diagnostico/diagnostico_menu.php'"><i class="fa-solid fa-arrow-left"></i> Voltar ao início</button>
       </div>
     </div>
     <div class="row mt-2 mb-2 ps-3 pe-3">
-      <div class="col-12">
+      <div class="col-sm-12">
         <h2>Folha de Pagamento</h2>
       </div>     
     </div>
-
-    <div class="row mt-4 mb-3 ps-3 pe-3">
-      <div class="col-md-4">
+    <div class="row mb-3 ps-3 pe-3">
+      <div class="col-sm-4 mt-4">
         <div class="rounded border ps-3 pe-3 pt-3 pb-3" style="background-color:#FFF;">
           <div class="d-flex">
             <div>
@@ -226,14 +225,14 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
             </div>
           </div>          
           <div class="row">
-            <div class="col">
-              <span class="h2 texto-negrito">
-                <?php echo $lbl_vlvenc_usuario; ?>
+            <div class="col-sm-12">
+              <span class="h2 texto-negrito text-nowrap">
+                <?php echo "R$ " . $lbl_vlvenc_usuario; ?>
               </span>
             </div>
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col-sm-12">
               <span class="texto-suave texto-menor">
                 Base contratual padrão
               </span>
@@ -241,7 +240,7 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-4 mt-4">
         <div class="rounded border ps-3 pe-3 pt-3 pb-3" style="background-color:#FFF;">
           <div class="d-flex">
             <div>
@@ -252,14 +251,14 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
             </div>
           </div>          
           <div class="row">
-            <div class="col">
+            <div class="col-sm-12">
               <span class="h2 texto-negrito">
-                <?php echo $lbl_vldesc_usuario ?>
+                <?php echo "R$ " . $lbl_vldesc_usuario ?>
               </span>
             </div>
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col-sm-12">
               <span class="texto-suave texto-menor">
                 <i class="fa-solid fa-arrow-up"></i>&nbsp;<?php echo $lbl_per_vldesc; ?> do bruto
               </span>
@@ -267,7 +266,7 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-4 mt-4">
         <div class="rounded border ps-3 pe-3 pt-3 pb-3 shadow" style="background-color:#1A5275;">
           <div class="d-flex">
             <div>
@@ -278,14 +277,14 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
             </div>
           </div>          
           <div class="row">
-            <div class="col">
+            <div class="col-sm-12">
               <span class="h2 texto-negrito texto-branco-regular">
-                <?php echo $lbl_vlliq_estimado ?>
+                <?php echo "R$ " . $lbl_vlliq_estimado ?>
               </span>
             </div>
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col-sm-12">
               <span class="texto-menor texto-inverso-regular">
                 Valor a ser depositado
               </span>
@@ -294,8 +293,8 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
         </div>
       </div>
     </div>
-    <div class="row mt-4 mb-3 ps-3 pe-3">
-      <div class="col-md-4">
+    <div class="row mb-3 ps-3 pe-3">
+      <div class="col-sm-4 mt-4">
         <div class="rounded border ps-3 pe-3 pt-3 pb-3" style="background-color:#FFF;">
           <h4>Detalhes da Jornada</h4>
           <span>CARGA HORÁRIA</span><br>
@@ -316,11 +315,11 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
           <span class="texto-negrito texto-maior"><?php echo $lbl_val_hrviagem ?></span>
         </div>
       </div>
-      <div class="col-md-8">        
+      <div class="col-sm-8 mt-4">
         <div class="card">
           <div class="card-header bg-transparent">
             <div class="row mt-4 mb-3 ps-3 pe-3">
-              <div class="col-md-6">
+              <div class="col-sm-6">
                 <div class="d-flex">
                   <div>
                     <span class="texto-maior texto-negrito"><i class="fa-regular fa-file-lines texto-corpo"></i>&nbsp;Holerite</span>
@@ -336,50 +335,46 @@ $lbl_vlafasta = "R$ " . FormataNumero($vlafasta, 2);
             <table class="table mb-0">
               <thead class="table-light">
                 <tr class="texto-suave texto-menor">
-                  <th scope="col">DESCRIÇÃO</th>
-                  <th scope="col">REFERÊNCIA</th>
-                  <th scope="col" class="text-end">VENCIMENTOS</th>
-                  <th scope="col" class="text-end">DESCONTOS</th>
+                  <th>DESCRIÇÃO</th>
+                  <th>REF</th>
+                  <th class="text-end">R$ VENCTOS</th>
+                  <th class="text-end">R$ DESCTOS</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td scope="col" class="texto-suave">Salário base</td>
-                  <td scope="col" class="texto-suave">30 Dias</td>
-                  <td scope="col" class="texto-negrito text-end"><?php echo $lbl_vlvenc_usuario; ?></td>
-                  <td scope="col" class="texto-negrito text-end"></td>
+                  <td class="texto-holerite texto-suave">Salário base</td>
+                  <td class="texto-holerite texto-suave">30 Dias</td>
+                  <td class="texto-holerite texto-negrito text-end"><?php echo $lbl_vlvenc_usuario; ?></td>
+                  <td class="texto-holerite texto-negrito text-end"></td>
                 </tr>
                 <tr>
-                  <td scope="col" class="texto-suave">INSS (Previdência Social)</td>
-                  <td scope="col" class="texto-suave"><?php echo $lbl_per_vlded_inss; ?></td>
-                  <td scope="col" class="texto-negrito text-end"></td>
-                  <td scope="col" class="texto-negrito text-end"><?php echo $lbl_vlded_inss; ?></td>
+                  <td class="texto-holerite texto-suave">INSS (Previdência Social)</td>
+                  <td class="texto-holerite texto-suave"><?php echo $lbl_per_vlded_inss; ?></td>
+                  <td class="texto-holerite texto-negrito text-end"></td>
+                  <td class="texto-holerite texto-negrito text-end"><?php echo $lbl_vlded_inss; ?></td>
                 </tr>
                 <tr>
-                  <td scope="col" class="texto-suave">IRRF (Imposto de Renda)</td>
-                  <td scope="col" class="texto-suave"><?php echo $lbl_aliq_irpf; ?></td>
-                  <td scope="col" class="texto-negrito text-end"></td>
-                  <td scope="col" class="texto-negrito text-end"><?php echo $lbl_vlded_irpf ?></td>
+                  <td class="texto-holerite texto-suave">IRRF (Imposto de Renda)</td>
+                  <td class="texto-holerite texto-suave"><?php echo $lbl_aliq_irpf; ?></td>
+                  <td class="texto-holerite texto-negrito text-end"></td>
+                  <td class="texto-holerite texto-negrito text-end"><?php echo $lbl_vlded_irpf ?></td>
                 </tr>
                 <tr class="table-light align-middle" style="height: 80px;">
-                  <td colspan="2" scope="col" class="border-bottom-0 texto-suave texto-maior">Totais</td>                    
-                  <td scope="col" class="border-bottom-0 texto-negrito texto-maior text-end texto-maior"><?php echo $lbl_vlvenc_usuario; ?></td>
-                  <td scope="col" class="border-bottom-0 texto-negrito texto-maior text-end texto-suave"><?php echo $lbl_vldesc_usuario; ?></td>
+                  <td colspan="2" class="texto-holerite border-bottom-0 texto-suave texto-maior">Totais</td>                    
+                  <td class="border-bottom-0 texto-negrito texto-maior-holerite text-end"><?php echo $lbl_vlvenc_usuario; ?></td>
+                  <td class="border-bottom-0 texto-negrito texto-maior-holerite text-end texto-suave"><?php echo $lbl_vldesc_usuario; ?></td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div class="card-footer" style="background-color:#e2eaef">
-            <div class="row mt-4 mb-3">
-              <div class="col-md-6">
-                <span class="h3 texto-negrito">
-                  LÍQUIDO A RECEBER
-                </span>
+          <div class="card-footer" style="background-color:#e2eaef;">
+            <div class="row mt-2 mb-2">
+              <div class="col-7">                
+                <span class="texto-maior4-holerite texto-negrito">LÍQUIDO A RECEBER</span>
               </div>
-              <div class="col-md-6 text-end">
-                <span class="h3 texto-negrito texto-regular">
-                  <?php echo $lbl_vlliq_estimado ?>
-                </span>
+              <div class="col-5 text-end">                
+                <span class="texto-maior4-holerite texto-negrito texto-regular"><?php echo "R$ " . $lbl_vlliq_estimado; ?></span>
               </div>
             </div>
           </div>

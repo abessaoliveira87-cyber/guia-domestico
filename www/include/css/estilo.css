@@ -1,5 +1,124 @@
 @charset "utf-8";
 
+@media screen and (max-width: 600px) {
+  .manchete {
+    font-size: 2.2rem; 
+    font-weight:800; 
+    line-height: 1
+  }
+  .texto-holerite {
+    font-size:0.9rem;  
+  }
+  .texto-maior-holerite {
+    font-size:1rem;
+  }
+  .texto-maior4-holerite {
+    font-size:1.1rem;
+  }  
+/*
+  body {
+    padding-top:60px;	
+  }
+  */
+}
+
+@media screen and (min-width: 768px) {
+  .manchete {
+    font-size: 3.2rem; 
+    font-weight:800; 
+    line-height: 1
+  }
+  .texto-holerite {
+    font-size:0.9rem;  
+  }
+  .texto-maior-holerite {
+    font-size:1rem;
+  }
+  .texto-maior4-holerite {
+    font-size:1.4rem;
+  }
+/*
+  p,.btn,input,div,span,h4 {
+    font-size: 100%;
+  }
+  h1 {
+   font-size: 20px;  
+  }
+  h2 {
+    font-size: 18px;  
+  }
+  h3 {
+    font-size: 16px;  
+  }
+  */
+}
+
+/* responsive text queries */
+@media screen and (min-width: 992px) {
+  .manchete {
+    font-size: 4.2rem; 
+    font-weight:800; 
+    line-height: 1
+  }  
+  .texto-holerite {
+    font-size:1rem;  
+  }
+  .texto-maior-holerite {
+    font-size:1.2rem;
+  }  
+  .texto-maior4-holerite {
+    font-size:1.8rem;
+  }  
+/*
+  p,.btn,input,div,span,h4 {
+    font-size: 100%;
+  }
+  h1 {
+    font-size: 24px;  
+  }
+  h2 {
+    font-size: 22px;  
+  }
+  h3 {
+    font-size: 18px;  
+  }
+  */
+}
+
+@media screen and (min-width: 1200px) {
+  .manchete {
+    font-size: 4.2rem; 
+    font-weight:800; 
+    line-height: 1
+  }
+  .texto-holerite {
+    font-size:1rem;  
+  }
+  .texto-maior-holerite {
+    font-size:1.2rem;
+  }
+  .texto-maior4-holerite {
+    font-size:1.8rem;
+  }  
+}
+
+@media screen and (min-width: 1400px) {
+  .manchete {
+    font-size: 4.2rem; 
+    font-weight:800; 
+    line-height: 1
+  }
+  .texto-holerite {
+    font-size:1rem;  
+  }
+  .texto-maior-holerite {
+    font-size:1.2rem;
+  }
+  .texto-maior4-holerite {
+    font-size:1.8rem;
+  }
+}
+
 .CorBG {
   background-color:#fff;
 }
@@ -348,6 +467,10 @@ table th a:hover {
 
 .texto-maior3 {
   font-size:1.6rem;
+}
+
+.texto-maior4 {
+  font-size:1.8rem;
 }
 
 .texto-italico {
