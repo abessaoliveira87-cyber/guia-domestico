@@ -135,13 +135,11 @@ if ($pos > 0) {
         </div>
       </div>
     </div>
-
     <div class="row mt-4 mb-2 ps-3 pe-3">
       <div class="col-sm-12">
         <h4>Como solicitar via 'Meu INSS'</h4>
       </div>
     </div>
-
     <div class="row ps-3 pe-3">
       <div class="col-sm-6">
         <div class="row">

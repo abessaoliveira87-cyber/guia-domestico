@@ -51,7 +51,6 @@ include($Raiz . "conexao/db.php");
   $qusuarioacesso->execute();
   // EOF Inclusao do acesso
 */
-
 $_SESSION["CHAVE_USUARIO"] = "";
 $_SESSION["NOME_USUARIO"] = "";
 $_SESSION["LOGIN_USUARIO"] = "";
@@ -59,6 +58,16 @@ $_SESSION["TIPO_USUARIO"] = "";
 $_SESSION["CHAVE_USUARIOLOGIN"] = "";
 $_SESSION["NOME_USUARIOLOGIN"] = "";
 $_SESSION["LOGIN_USUARIOLOGIN"] = "";
+$_SESSION["SESSAO_INICIO"] = "";
+$_SESSION["SESSAO_EXPIRA"] = 0;
+$_SESSION["CHAVE_CARGO"] = "";
+$_SESSION["DESCR_CARGO"] = "";
+$_SESSION["CBO_CARGO"] = "";
+$_SESSION["SALARIO_USUARIO"] = "";
+$_SESSION["DTI_USUARIO"] = "";
+$_SESSION["HRDIA_USUARIO"] = "";
+$_SESSION["HRDIASAB_USUARIO"] = "";
+$_SESSION["DIASEMANA_USUARIO"] = "";
 fecha_db();
 session_destroy();
 header("Location: /index.php");

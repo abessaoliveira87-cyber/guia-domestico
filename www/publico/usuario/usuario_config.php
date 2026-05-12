@@ -253,10 +253,9 @@ if ($acao == "EDITAR") {
                     <div class="col-md-7 mt-3">
                       <span class="texto-maior2 texto-negrito"><i class="fa-solid fa-recycle"></i>&nbsp;Alterar senha</span><br>
                       <span class="texto-suave texto-menor">Enviaremos um link de recuperação para seu e-mail.</span>
-
                     </div>
                     <div class="col-md-5 mt-3 mb-3 text-end">
-                      <button type="button" id="BTN_NOVASENHA" name="BTN_NOVASENHA" class="btn btn-custom-prata" onclick="javascript:renovar_senha();"><span class="text-nowrap">Solicitar nova senha</span></button>  
+                      <button type="button" id="BTN_NOVASENHA" name="BTN_NOVASENHA" class="btn btn-custom-prata" onclick="javascript:location=\'usuario_lembrar.php\';"><span class="text-nowrap">Solicitar nova senha</span></button>  
                     </div>
                   </div>                  
                 </div>                
@@ -267,7 +266,7 @@ if ($acao == "EDITAR") {
                       <span class="texto-suave texto-menor">Tem certeza que deseja excluir sua conta? Essa ação é irreversível e todos os seus dados serão permanentemente removidos.</span>
                     </div>
                     <div class="col-md-4 text-end" style="min-height:100px; padding-top:40px;">
-                        <button type="button" id="BTN_EXCLUIR" name="BTN_EXCLUIR" class="btn btn-outline-danger">Excluir conta</button>
+                        <button type="button" id="BTN_EXCLUIR" name="BTN_EXCLUIR" class="btn btn-outline-danger" onclick="javascript:location=\'usuario_excluir.php\';">Excluir conta</button>
                     </div>
                   </div>                  
                 </div>              
@@ -455,7 +454,7 @@ if ($acao == "RENOVAR_SENHA") {
 
                     </div>
                     <div class="col-md-5 mt-3 mb-3 text-end">
-                      <button type="button" id="BTN_NOVASENHA" name="BTN_NOVASENHA" class="btn btn-custom-prata" onclick="javascript:renovar_senha();"><span class="text-nowrap">Solicitar nova senha</span></button>  
+                      <button type="button" id="BTN_NOVASENHA" name="BTN_NOVASENHA" class="btn btn-custom-prata" onclick="javascript:location=\'usuario_lembrar.php\';"><span class="text-nowrap">Solicitar nova senha</span></button>  
                     </div>
                   </div>                  
                 </div>                
@@ -466,7 +465,7 @@ if ($acao == "RENOVAR_SENHA") {
                       <span class="texto-suave texto-menor">Tem certeza que deseja excluir sua conta? Essa ação é irreversível e todos os seus dados serão permanentemente removidos.</span>
                     </div>
                     <div class="col-md-4 text-end" style="min-height:100px; padding-top:40px;">
-                        <button type="button" id="BTN_EXCLUIR" name="BTN_EXCLUIR" class="btn btn-outline-danger">Excluir conta</button>
+                        <button type="button" id="BTN_EXCLUIR" name="BTN_EXCLUIR" class="btn btn-outline-danger" onclick="javascript:location=\'usuario_excluir.php\';">Excluir conta</button>
                     </div>
                   </div>                  
                 </div>              
