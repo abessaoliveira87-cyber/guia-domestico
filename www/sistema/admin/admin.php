@@ -53,7 +53,6 @@ $procurar = "";
 $procurar_exceto = "";
 $ordem = "";
 $ordempos = "";
-$pagina_titulo = "Cadastro de Administradores do Portal";
 
 //********************
 //********************
@@ -334,9 +333,9 @@ while ($tusuario = $qusuario->fetch(PDO::FETCH_ASSOC)) {
   $etq .= '              <tr>' . "\n";
   $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA">' . str_pad($chave_usuario, 6, "0", STR_PAD_LEFT) . '</td>' . "\n";
   $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA">' . $nome_usuario . '</td>' . "\n";
-  $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA d-none d-sm-block">' . $email_usuario . '</td>' . "\n";  
-  $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA d-none d-sm-block">' . $dtc_usuario . '</td>' . "\n";  
-  $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA d-none d-sm-block">' . $tipo_usuario . '</td>' . "\n";
+  $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA d-none d-md-table-cell">' . $email_usuario . '</td>' . "\n";  
+  $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA d-none d-md-table-cell">' . $dtc_usuario . '</td>' . "\n";  
+  $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA d-none d-md-table-cell">' . $tipo_usuario . '</td>' . "\n";
   $etq .= '                <td data-id_dbg="' . $chave_usuario . '" class="SELECIONA_LINHA text-center">' . $sit_usuario . '</td>' . "\n";
   $etq .= '                <td class="text-center"><a class="link-padrao" href="#" data-bs-toggle="modal" data-bs-target="#MODAL_DIARIO_EXC" id="SHOW_DIARIO_EXC" data-id="' . $chave_usuario . '" data-campo-id="chave_usuario" data-tabela-id="tusuario" data-url-id="' . $Raiz . '" data-caixa-id="caixa_usuario"><i class="fa-regular fa-trash-can" title="Excluir"></i></a></td>' . "\n";
   $etq .= '                <td class="text-center"><a class="link-padrao" href="#" data-bs-toggle="modal" data-bs-target="#MODAL_DIARIO"     id="SHOW_DIARIO"     data-id="' . $chave_usuario . '" data-campo-id="chave_usuario" data-tabela-id="tusuario" data-url-id="' . $Raiz . '"><i class="fas fa-database" title="Diário do registro"></i></a></td>' . "\n";
@@ -400,9 +399,9 @@ if ($etq != "") {
   $html .= '              <tr>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/admin/admin.php?ORDEM=CHAVE_USUARIO">Chave</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/admin/admin.php?ORDEM=NOME_USUARIO">Nome</a></th>' . "\n";
-  $html .= '                <th class="d-none d-sm-block"><a href="' . $Raiz . 'sistema/admin/admin.php?ORDEM=EMAIL_USUARIO">E-mail</a></th>' . "\n";
-  $html .= '                <th class="d-none d-sm-block"><a href="' . $Raiz . 'sistema/admin/admin.php?ORDEM=DTC_USUARIO">Cadastro</a></th>' . "\n";  
-  $html .= '                <th class="d-none d-sm-block"><a href="' . $Raiz . 'sistema/admin/admin.php?ORDEM=TIPO_USUARIO">Tipo</a></th>' . "\n";
+  $html .= '                <th class="d-none d-md-table-cell"><a href="' . $Raiz . 'sistema/admin/admin.php?ORDEM=EMAIL_USUARIO">E-mail</a></th>' . "\n";
+  $html .= '                <th class="d-none d-md-table-cell"><a href="' . $Raiz . 'sistema/admin/admin.php?ORDEM=DTC_USUARIO">Cadastro</a></th>' . "\n";  
+  $html .= '                <th class="d-none d-md-table-cell"><a href="' . $Raiz . 'sistema/admin/admin.php?ORDEM=TIPO_USUARIO">Tipo</a></th>' . "\n";
   $html .= '                <th class="text-center"><a href="' . $Raiz . 'sistema/admin/admin.php?ORDEM=SIT_USUARIO">Situação</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/admin/admin.php?ORDEM=CAIXA_USUARIO"> </a></th>' . "\n";
   $html .= '                <th></th>' . "\n";
@@ -521,8 +520,8 @@ $html .= '      </div>' . "\n";
     </div>
     <div class="row mt-4 Texto-Rodape">
       <div class="col-sm-12">
-        <h5>Legendas</h5>
-        <span><i class="fas fa-minus-circle" style="min-width:40px;" align="center"></i>Excluir registro</span><br />
+        <h5>Legendas</h5>        
+        <span><i class="fa-regular fa-trash-can" style="min-width:40px;" align="center"></i>Excluir registro</span><br />
         <span><i class="fas fa-database" style="min-width:40px;" align="center"></i>Diário do registro</span>
       </div>
     </div>

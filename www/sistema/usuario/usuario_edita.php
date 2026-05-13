@@ -295,13 +295,13 @@ Modal_Exclusao($Raiz, $link_main);
   <?php echo $html_submenu ?> 
   <div class="card shadow card-personalizado">
     <div class="row">
-      <div class="col-sm-12 mx-auto" style="max-width:800px">
-        <div class="card mt-4">  
+      <div class="col-sm-12 mt-4 ps-3 pe-3">
+        <div class="card mx-auto" style="max-width:800px">  
           <div class="card-header">
             <?php echo Titulo_Cartao($pagina_titulo); ?>
           </div>
           <div class="card-body">
-            <div class="row small" style="padding:10px">
+            <div class="row small">
               <form method="POST" action="<?php echo $Raiz ?>sistema/usuario/usuario_edita.php" id="FUSUARIO_EDITA" name="FUSUARIO_EDITA">
                 <input type="hidden" id="chave_usuario" name="chave_usuario" value="<?php echo $chave_usuario ?>">
                 <input type="hidden" id="acao_usuario" name="acao_usuario" value="GRAVAR">

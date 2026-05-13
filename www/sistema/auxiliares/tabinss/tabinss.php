@@ -357,8 +357,8 @@ while ($ttabinss = $qtabinss->fetch(PDO::FETCH_ASSOC)) {
   $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA">' . $vli_tabinss . '</td>' . "\n";  
   $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA">' . $vlf_tabinss . '</td>' . "\n";
   $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA">' . $aliq_tabinss . '</td>' . "\n";  
-  $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA d-none d-sm-block">' . $vlded_tabinss . '</td>' . "\n";
-  $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA d-none d-sm-block">' . $vlfixo_tabinss . '</td>' . "\n";
+  $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA d-none d-md-table-cell">' . $vlded_tabinss . '</td>' . "\n";
+  $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA d-none d-md-table-cell">' . $vlfixo_tabinss . '</td>' . "\n";
   $etq .= '                <td data-id_dbg="' . $chave_tabinss . '" class="SELECIONA_LINHA">' . $ano_tabinss . '</td>' . "\n";
   $etq .= '                <td class="text-center"><a class="link-padrao" href="#" data-bs-toggle="modal" data-bs-target="#MODAL_DIARIO_EXC" id="SHOW_DIARIO_EXC" data-id="' . $chave_tabinss . '" data-campo-id="chave_tabinss" data-tabela-id="ttabinss" data-url-id="' . $Raiz . '" data-caixa-id="caixa_tabinss"><i class="fa-regular fa-trash-can" title="Excluir"></a></td>' . "\n";
   $etq .= '                <td class="text-center"><a class="link-padrao" href="#" data-bs-toggle="modal" data-bs-target="#MODAL_DIARIO"     id="SHOW_DIARIO"     data-id="' . $chave_tabinss . '" data-campo-id="chave_tabinss" data-tabela-id="ttabinss" data-url-id="' . $Raiz . '"><i class="fas fa-database" title="Diário do registro"></i></a></td>' . "\n";
@@ -424,8 +424,8 @@ if ($etq != "") {
   $html .= '                <th><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=VLI_TABINSS">De</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=VLF_TABINSS">Até</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=ALIQ_TABINSS">Alíquota</a></th>' . "\n";
-  $html .= '                <th class="d-none d-sm-block"><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=VLDED_TABINSS">Dedução</a></th>' . "\n";
-  $html .= '                <th class="d-none d-sm-block"><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=VLFIXO_TABINSS">Valor Fixo</a></th>' . "\n";
+  $html .= '                <th class="d-none d-md-table-cell"><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=VLDED_TABINSS">Dedução</a></th>' . "\n";
+  $html .= '                <th class="d-none d-md-table-cell"><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=VLFIXO_TABINSS">Valor Fixo</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=ANO_TABINSS">Ano</a></th>' . "\n";  
   $html .= '                <th><a href="' . $Raiz . 'sistema/auxiliares/tabinss/tabinss.php?ORDEM=CAIXA_TABINSS"> </a></th>' . "\n";
   $html .= '                <th></th>' . "\n";
@@ -551,7 +551,7 @@ $html .= '      </div>' . "\n";
     <div class="row mt-4 Texto-Rodape">
       <div class="col-sm-12">
         <h5>Legendas</h5>
-        <span><i class="fas fa-minus-circle" style="min-width:40px;" align="center"></i>Excluir registro</span><br />
+        <span><i class="fa-regular fa-trash-can" style="min-width:40px;" align="center"></i>Excluir registro</span><br />
         <span><i class="fas fa-database" style="min-width:40px;" align="center"></i>Diário do registro</span>
       </div>
     </div>

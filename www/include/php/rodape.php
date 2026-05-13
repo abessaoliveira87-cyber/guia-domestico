@@ -29,7 +29,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12" style="min-height:40px">
-    &nbsp;
+      &nbsp;
     </div>
   </div>
 <!--  
@@ -41,29 +41,29 @@
     </div>
   </div>
 -->  
-  <div class="row mt-5 mb-5">
-    <div class="col-sm-6">
+  <div class="row">
+    <div class="col-sm-6 mt-4">
       <a class="navbar-brand" href="/"><img src="/design/guiadomestico_transp.png" class="img-fluid" style="max-width:200px" /></a>      
-      <p class="mt-4" style="max-width:60%">Apoiando o trabalhador doméstico brasileiro com informação de qualidade e ferramentas de cálculo acessíveis.</p>
+      <p class="mt-4" style="max-width:400px">Apoiando o trabalhador doméstico brasileiro com informação de qualidade e ferramentas de cálculo acessíveis.</p>
     </div>
     <div class="col-sm-6">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 mt-4">
           <h6 class="texto-regular-negrito">Links úteis</h6>
           <a class="texto-menor sem-decoracao2" href="https://www.gov.br/pt-br/servicos/obter-a-carteira-de-trabalho" target="_blank">CTPS Digital</a><br>
           <a class="texto-menor sem-decoracao2" href="https://www.gov.br/trabalho-e-emprego/pt-br" target="_blank">Ministério do Trabalho</a><br>
           <a class="texto-menor sem-decoracao2" href="/publico/diagnostico/diagnostico_ferias13.php" target="_blank">Calculadora de Férias</a><br>
           <a class="texto-menor sem-decoracao2" href="https://www.gov.br/inss/pt-br/noticias/confira-as-aliquotas-de-contribuicao-ao-inss-com-o-aumento-do-salario-minimo" target="_blank">Tabela INSS 2024</a><br>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 mt-4">
           <h6 class="texto-regular-negrito">Contato</h6>
-          <span><small><i class="fa-regular fa-envelope"></i>&nbsp;suporte@guiadomestico.com.br</span></small><br>
+          <span class="texto-menor"><i class="fa-regular fa-envelope"></i>&nbsp;suporte@guiadomestico.com.br</span><br>
           <!--<span><small><i class="fa-regular fa-circle-question"></i>&nbsp;Central de ajuda</span></small>-->
         </div>
       </div>
     </div>
   </div>
-  <div class="row mb-5">
+  <div class="row mt-4">
     <div class="col-sm-6">
       <span class="texto-rodape texto-suave" style="font-size:12px">Copyright © <?php echo date("Y"); ?> Guia Doméstico. Todos os direitos reservados.</span>
     </div>

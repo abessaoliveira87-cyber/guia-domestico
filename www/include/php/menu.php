@@ -80,7 +80,7 @@ if (isset($_SESSION["CHAVE_USUARIO"])) {
                 <a class="dropdown-item" href="/sistema/admin/admin.php">Administradores</a>
               </li>
               <li>
-                <a class="dropdown-item" href="/sistema/auxiliares/tabinss/tabinss.php">Tabela de Contribuição do INSS</a>
+                <a class="dropdown-item" href="/sistema/auxiliares/tabinss/tabinss.php">Tabela de INSS</a>
               </li>
               <li>
                 <a class="dropdown-item" href="/sistema/auxiliares/tabirpf/tabirpf.php">Tabela de IRPF</a>

@@ -331,10 +331,10 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
   $sit_cargo = $tcargo["sit_cargo"];
   $etq .= '              <tr>' . "\n";
   $etq .= '                <td data-id_dbg="' . $chave_cargo . '" class="SELECIONA_LINHA">' . str_pad($chave_cargo, 6, "0", STR_PAD_LEFT) . '</td>' . "\n";
-  $etq .= '                <td data-id_dbg="' . $chave_cargo . '" class="SELECIONA_LINHA">' . $esocial_cargo . '</td>' . "\n";  
+  $etq .= '                <td data-id_dbg="' . $chave_cargo . '" class="SELECIONA_LINHA d-none d-md-table-cell">' . $esocial_cargo . '</td>' . "\n";  
   $etq .= '                <td data-id_dbg="' . $chave_cargo . '" class="SELECIONA_LINHA">' . $descr_cargo . '</td>' . "\n";
-  $etq .= '                <td data-id_dbg="' . $chave_cargo . '" class="SELECIONA_LINHA">' . $cbo_cargo . '</td>' . "\n";  
-  $etq .= '                <td data-id_dbg="' . $chave_cargo . '" class="SELECIONA_LINHA d-none d-sm-block text-center">' . $sit_cargo . '</td>' . "\n";
+  $etq .= '                <td data-id_dbg="' . $chave_cargo . '" class="SELECIONA_LINHA text-nowrap">' . $cbo_cargo . '</td>' . "\n";  
+  $etq .= '                <td data-id_dbg="' . $chave_cargo . '" class="SELECIONA_LINHA d-none d-md-table-cell text-center">' . $sit_cargo . '</td>' . "\n";
   $etq .= '                <td class="text-center"><a class="link-padrao" href="#" data-bs-toggle="modal" data-bs-target="#MODAL_DIARIO_EXC" id="SHOW_DIARIO_EXC" data-id="' . $chave_cargo . '" data-campo-id="chave_cargo" data-tabela-id="tcargo" data-url-id="' . $Raiz . '" data-caixa-id="caixa_cargo"><i class="fa-regular fa-trash-can" title="Excluir"></a></td>' . "\n";
   $etq .= '                <td class="text-center"><a class="link-padrao" href="#" data-bs-toggle="modal" data-bs-target="#MODAL_DIARIO"     id="SHOW_DIARIO"     data-id="' . $chave_cargo . '" data-campo-id="chave_cargo" data-tabela-id="tcargo" data-url-id="' . $Raiz . '"><i class="fas fa-database" title="Diário do registro"></i></a></td>' . "\n";
   $etq .= '              </tr>' . "\n";
@@ -396,10 +396,10 @@ if ($etq != "") {
   $html .= '            <thead class="thead-light">' . "\n";
   $html .= '              <tr>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/cargo/cargo.php?ORDEM=CHAVE_CARGO">Chave</a></th>' . "\n";
-  $html .= '                <th><a href="' . $Raiz . 'sistema/cargo/cargo.php?ORDEM=ESOCIAL_CARGO">E-Social</a></th>' . "\n";
+  $html .= '                <th class="d-none d-md-table-cell text-nowrap"><a href="' . $Raiz . 'sistema/cargo/cargo.php?ORDEM=ESOCIAL_CARGO">E-Social</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/cargo/cargo.php?ORDEM=DESCR_CARGO">Descrição</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/cargo/cargo.php?ORDEM=CBO_CARGO">CBO</a></th>' . "\n";
-  $html .= '                <th class="d-none d-sm-block text-center"><a href="' . $Raiz . 'sistema/cargo/cargo.php?ORDEM=SIT_CARGO">Situação</a></th>' . "\n";
+  $html .= '                <th class="d-none d-md-table-cell text-center"><a href="' . $Raiz . 'sistema/cargo/cargo.php?ORDEM=SIT_CARGO">Situação</a></th>' . "\n";
   $html .= '                <th><a href="' . $Raiz . 'sistema/cargo/cargo.php?ORDEM=CAIXA_CARGO"> </a></th>' . "\n";
   $html .= '                <th></th>' . "\n";
   $html .= '              </tr>' . "\n";
@@ -523,7 +523,7 @@ $html .= '      </div>' . "\n";
     <div class="row mt-4 Texto-Rodape">
       <div class="col">
         <h5>Legendas</h5>
-        <span><i class="fas fa-minus-circle" style="min-width:40px;" align="center"></i>Excluir registro</span><br />
+        <span><i class="fa-regular fa-trash-can" style="min-width:40px;" align="center"></i>Excluir registro</span><br />
         <span><i class="fas fa-database" style="min-width:40px;" align="center"></i>Diário do registro</span>
       </div>
     </div>
@@ -542,5 +542,4 @@ $html .= '      </div>' . "\n";
     });
   </script>
 </body>
-
 </html>
