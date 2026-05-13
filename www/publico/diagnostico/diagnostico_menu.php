@@ -244,7 +244,7 @@ while ($tcargo = $qcargo->fetch(PDO::FETCH_ASSOC)) {
                   </div>            
                 </div>
                 <div class="col-sm-8">
-                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br" target="_blank" class="link-padrao text-nowrap">&nbsp;Ministério do Brabalho</a>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br" target="_blank" class="link-padrao text-nowrap">&nbsp;Ministério do Trabalho</a>
                   <a href="https://www.gov.br/trabalho-e-emprego/pt-br" target="_blank" class="text-nowrap sem-decoracao texto-suave texto-menor">&nbsp;Consultas e denúncias</a>
                 </div>
               </div>            
